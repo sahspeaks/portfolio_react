@@ -40,7 +40,7 @@ body {
     color: var(--color-white);
     line-height: 1.7;
     /* background-image: url(../src/assets/bg.jpg); */
-    background-color: var(--color-bg);
+    background-color: #0d0d0d;
     background-size: cover;
 }
 
