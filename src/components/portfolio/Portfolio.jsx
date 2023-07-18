@@ -23,8 +23,8 @@ export const Portfolio = () => {
           </div>
           <h3>Kinder-A Dating App</h3>
           <div className="portfolio_item-cta">
-          <a href="https://github.com/" className='btn' target='_blank'>Github</a>
-          <a href="https://github.com/" className='btn btn-primary' target='_blank'>Live Demo</a>
+          <a href="https://github.com/sahspeaks/Kinder" className='btn' target='_blank'>Github</a>
+          <a href="https://sahspeaks.github.io/Kinder/" className='btn btn-primary' target='_blank'>Live Demo</a>
           </div>
         </article>
 
@@ -34,8 +34,8 @@ export const Portfolio = () => {
           </div>
           <h3>Hunger</h3>
           <div className="portfolio_item-cta">            
-          <a href="https://github.com/" className='btn' target='_blank'>Github</a>
-          <a href="https://github.com/" className='btn btn-primary' target='_blank'>Live Demo</a>
+          <a href="https://github.com/sahspeaks/Hunger" className='btn' target='_blank'>Github</a>
+          <a href="https://sahspeaks.github.io/Hunger/" className='btn btn-primary' target='_blank'>Live Demo</a>
           </div>
         </article>
 
@@ -45,8 +45,8 @@ export const Portfolio = () => {
           </div>
           <h3>Todo-List</h3>
           <div className="portfolio_item-cta">            
-          <a href="https://github.com/" className='btn' target='_blank'>Github</a>
-          <a href="https://github.com/" className='btn btn-primary' target='_blank'>Live Demo</a>
+          <a href="https://github.com/sahspeaks/todo_list" className='btn' target='_blank'>Github</a>
+          <a href="https://todolist-app-iou8.onrender.com/" className='btn btn-primary' target='_blank'>Live Demo</a>
           </div>
         </article>
         <article className='portfolio_item'>
@@ -55,8 +55,8 @@ export const Portfolio = () => {
           </div>
           <h3>Calculator</h3>
           <div className="portfolio_item-cta">            
-          <a href="https://github.com/" className='btn' target='_blank'>Github</a>
-          <a href="https://github.com/" className='btn btn-primary' target='_blank'>Live Demo</a>
+          <a href="https://github.com/sahspeaks/Calculator" className='btn' target='_blank'>Github</a>
+          <a href="https://sahspeaks.github.io/Calculator/" className='btn btn-primary' target='_blank'>Live Demo</a>
           </div>
         </article>
         <article className='portfolio_item'>
@@ -65,8 +65,8 @@ export const Portfolio = () => {
           </div>
           <h3>Temperature-Converter</h3>
           <div className="portfolio_item-cta">            
-          <a href="https://github.com/" className='btn' target='_blank'>Github</a>
-          <a href="https://github.com/" className='btn btn-primary' target='_blank'>Live Demo</a>
+          <a href="https://github.com/sahspeaks/Temperature-Converter" className='btn' target='_blank'>Github</a>
+          <a href="https://sahspeaks.github.io/Temperature-Converter/" className='btn btn-primary' target='_blank'>Live Demo</a>
           </div>
         </article>
         <article className='portfolio_item'>
@@ -75,7 +75,7 @@ export const Portfolio = () => {
           </div>
           <h3>Weather-App</h3>
           <div className="portfolio_item-cta">            
-          <a href="https://github.com/" className='btn' target='_blank'>Github</a>
+          <a href="https://github.com/sahspeaks/weather-App2.0" className='btn' target='_blank'>Github</a>
           <a href="https://github.com/" className='btn btn-primary' target='_blank' disabled>Live Demo</a>
           </div>
         </article>
@@ -85,7 +85,7 @@ export const Portfolio = () => {
           </div>
           <h3>News Nation</h3>
           <div className="portfolio_item-cta">            
-          <a href="https://github.com/" className='btn' target='_blank'>Github</a>
+          <a href="https://github.com/sahspeaks/News-App" className='btn' target='_blank'>Github</a>
           <a href="https://github.com/" className='btn btn-primary' target='_blank' disabled>Live Demo</a>
           </div>
         </article>
@@ -105,8 +105,8 @@ export const Portfolio = () => {
           </div>
           <h3>MyNotes</h3>
           <div className="portfolio_item-cta">            
-          <a href="https://github.com/" className='btn' target='_blank'>Github</a>
-          <a href="https://github.com/" className='btn btn-primary' target='_blank'>Live Demo</a>
+          <a href="https://github.com/sahspeaks/Word-Analyzer" className='btn' target='_blank'>Github</a>
+          <a href="https://word-analyzer.vercel.app/" className='btn btn-primary' target='_blank'>Live Demo</a>
           </div>
         </article>
         <article className='portfolio_item'>
@@ -115,8 +115,8 @@ export const Portfolio = () => {
           </div>
           <h3>Portfolio</h3>
           <div className="portfolio_item-cta">            
-          <a href="https://github.com/" className='btn' target='_blank'>Github</a>
-          <a href="https://github.com/" className='btn btn-primary' target='_blank'>Live Demo</a>
+          <a href="https://github.com/sahspeaks/MyPortfolio" className='btn' target='_blank'>Github</a>
+          <a href="https://sahspeaks.netlify.app/" className='btn btn-primary' target='_blank'>Live Demo</a>
           </div>
         </article>
         <article className='portfolio_item'>
@@ -125,7 +125,7 @@ export const Portfolio = () => {
           </div>
           <h3>Edumindz</h3>
           <div className="portfolio_item-cta">
-          <a href="https://github.com/" className='btn' target='_blank'>Github</a>
+          <a href="https://github.com/sahspeaks/Edumindz" className='btn' target='_blank'>Github</a>
           <a href="https://github.com/" className='btn btn-primary' target='_blank' disabled>Live Demo</a>
           </div>
         </article>
