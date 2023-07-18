@@ -96,7 +96,7 @@ export const Portfolio = () => {
           <h3>Word-Analyser</h3>
           <div className="portfolio_item-cta">            
           <a href="https://github.com/" className='btn' target='_blank'>Github</a>
-          <a href="https://github.com/" className='btn btn-primary' target='_blank'>Live Demo</a>
+          <a href="https://word-analyzer.vercel.app/" className='btn btn-primary' target='_blank'>Live Demo</a>
           </div>
         </article>
         <article className='portfolio_item'>
@@ -106,8 +106,9 @@ export const Portfolio = () => {
           <h3>MyNotes</h3>
           <div className="portfolio_item-cta">            
           <a href="https://github.com/sahspeaks/Word-Analyzer" className='btn' target='_blank'>Github</a>
-          <a href="https://word-analyzer.vercel.app/" className='btn btn-primary' target='_blank'>Live Demo</a>
+          <a href="https://makemynotes.netlify.app/" className='btn btn-primary' target='_blank'>Live Demo</a>
           </div>
+          
         </article>
         <article className='portfolio_item'>
           <div className="portfolio_item-image">
