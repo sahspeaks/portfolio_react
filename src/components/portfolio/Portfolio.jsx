@@ -85,7 +85,11 @@ export const Portfolio = () => {
           </div>
           <h3>Word-Analyser</h3>
           <div className="portfolio_item-cta">
-            <a href="https://github.com/" className="btn" target="_blank">
+            <a
+              href="https://github.com/sahspeaks/Word-Analyzer"
+              className="btn"
+              target="_blank"
+            >
               Github
             </a>
             <a
