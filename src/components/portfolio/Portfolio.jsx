@@ -12,6 +12,7 @@ import Notes from "../../assets/Notes.png";
 import Port from "../../assets/Portfolio.png";
 import Edumindz from "../../assets/Edumindz.png";
 import HomeMade_Haven from "../../assets/HomeMade_Haven.png";
+import Portfolio1 from "../../assets/Portfolio1.png";
 export const Portfolio = () => {
   return (
     <section id="portfolio">
@@ -280,6 +281,29 @@ export const Portfolio = () => {
             </a>
             <a
               href="https://sahspeaks.github.io/Hunger/"
+              className="btn btn-primary"
+              target="_blank"
+            >
+              Live Demo
+            </a>
+          </div>
+        </article>
+
+        <article className="portfolio_item">
+          <div className="portfolio_item-image">
+            <img src="" alt="My first project" />
+          </div>
+          <h3>Portfolio</h3>
+          <div className="portfolio_item-cta">
+            <a
+              href="https://github.com/sahspeaks/Portfolio"
+              className="btn"
+              target="_blank"
+            >
+              Github
+            </a>
+            <a
+              href="https://sahspeaks.github.io/Portfolio/"
               className="btn btn-primary"
               target="_blank"
             >
