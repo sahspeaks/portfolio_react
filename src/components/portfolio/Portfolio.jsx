@@ -291,7 +291,7 @@ export const Portfolio = () => {
 
         <article className="portfolio_item">
           <div className="portfolio_item-image">
-            <img src="" alt="My first project" />
+            <img src={Portfolio1} alt="My first project" />
           </div>
           <h3>Portfolio</h3>
           <div className="portfolio_item-cta">
