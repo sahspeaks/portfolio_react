@@ -51,7 +51,7 @@ export const Portfolio = () => {
             >
               Github
             </a>
-            <a href="" className="btn btn-primary" target="_blank" disabled>
+            <a href="https://edumindz.netlify.app" className="btn btn-primary" target="_blank">
               Live Demo
             </a>
           </div>
