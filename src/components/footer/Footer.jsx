@@ -19,10 +19,10 @@ export const Footer = () => {
           <a href="#about">About</a>
         </li>
         <li>
-          <a href="#experiance">Experience</a>
+          <a href="#experiance">Skills</a>
         </li>
         <li>
-          <a href="#service">Services</a>
+          <a href="#service">Expertise</a>
         </li>
         <li>
           <a href="#portfolio">Works</a>
