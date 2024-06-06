@@ -13,12 +13,31 @@ import Port from "../../assets/Portfolio.png";
 import Edumindz from "../../assets/Edumindz.png";
 import HomeMade_Haven from "../../assets/HomeMade_Haven.png";
 import Portfolio1 from "../../assets/Portfolio1.png";
+import BTC from "../../assets/BTC.jpg";
 export const Portfolio = () => {
   return (
     <section id="portfolio">
       <h5>My Recent Work </h5>
       <h2>Portfolio</h2>
       <div className="container portfolio_container">
+        <article className="portfolio_item">
+          <div className="portfolio_item-image">
+            <img src={BTC} alt="BrainTumor-App" />
+          </div>
+          <h3>Brain Tumor Classifier</h3>
+          <div className="portfolio_item-cta">
+            <a
+              href="https://github.com/sahspeaks/brain-tumor-webapp"
+              className="btn"
+              target="_blank"
+            >
+              Github
+            </a>
+            <a href="" className="btn btn-primary" target="_blank" disabled>
+              Live Demo
+            </a>
+          </div>
+        </article>
         <article className="portfolio_item">
           <div className="portfolio_item-image">
             <img src={HomeMade_Haven} alt="Edumindz-App" />
@@ -51,7 +70,11 @@ export const Portfolio = () => {
             >
               Github
             </a>
-            <a href="https://edumindz.netlify.app" className="btn btn-primary" target="_blank">
+            <a
+              href="https://edumindz.netlify.app"
+              className="btn btn-primary"
+              target="_blank"
+            >
               Live Demo
             </a>
           </div>
