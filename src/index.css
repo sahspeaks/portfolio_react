@@ -8,14 +8,103 @@
     list-style: none;
     text-decoration: none;
 }
+/* 
+* Option 1: Deep Purple & Mint */
+/* :root {
+    --color-bg: #1a1625;
+    --color-bg-variant: #2d2644;
+    --color-primary: #7fffd4;
+    --color-primary-variant: rgba(127, 255, 212, 0.4);
+    --color-white: #fff;
+    --color-light: rgba(255, 255, 255, 0.6);
+} */
+
+/* Option 2: Midnight & Coral */
+/* :root {
+    --color-bg: #0f172a;
+    --color-bg-variant: #1e293b;
+    --color-primary: #ff7f50;
+    --color-primary-variant: rgba(255, 127, 80, 0.4);
+    --color-white: #fff;
+    --color-light: rgba(255, 255, 255, 0.6);
+} */
+
+/* Option 3: Dark Emerald */
+/* :root {
+    --color-bg: #0f251f;
+    --color-bg-variant: #1a3d32;
+    --color-primary: #4ade80;
+    --color-primary-variant: rgba(74, 222, 128, 0.4);
+    --color-white: #fff;
+    --color-light: rgba(255, 255, 255, 0.6);
+} */
+
+/* Option 4: Deep Ocean */
+/* :root {
+    --color-bg: #0c1d2d;
+    --color-bg-variant: #1a3a52;
+    --color-primary: #60efff;
+    --color-primary-variant: rgba(96, 239, 255, 0.4);
+    --color-white: #fff;
+    --color-light: rgba(255, 255, 255, 0.6);
+} */
+
+/* Option 5: Dark Rose */
+/* :root {
+    --color-bg: #1f1318;
+    --color-bg-variant: #2d1b22;
+    --color-primary: #ff6b9c;
+    --color-primary-variant: rgba(255, 107, 156, 0.4);
+    --color-white: #fff;
+    --color-light: rgba(255, 255, 255, 0.6);
+} */
+
+/* Option 6: Cyberpunk */
+/* :root {
+    --color-bg: #0d0f1b;
+    --color-bg-variant: #1a1c2e;
+    --color-primary: #f9c74f;
+    --color-primary-variant: rgba(249, 199, 79, 0.4);
+    --color-white: #fff;
+    --color-light: rgba(255, 255, 255, 0.6);
+} */
+
+/* Option 7: Forest Night */
+/* :root {
+    --color-bg: #141b10;
+    --color-bg-variant: #1e2a17;
+    --color-primary: #90be6d;
+    --color-primary-variant: rgba(144, 190, 109, 0.4);
+    --color-white: #fff;
+    --color-light: rgba(255, 255, 255, 0.6);
+} */
+
+/* Option 8: Tech Noir */
+/* :root {
+    --color-bg: #0a0a18;
+    --color-bg-variant: #16163f;
+    --color-primary: #fb5de7;
+    --color-primary-variant: rgba(251, 93, 231, 0.4);
+    --color-white: #fff;
+    --color-light: rgba(255, 255, 255, 0.6);
+}  */
+
 
 :root {
-    --color-bg: #1f1f38;
+    /* --color-bg: #1f1f38;
     --color-bg-variant: #2c2c6c;
     --color-primary: #4db5ff;
     --color-primary-variant: rgba(77, 181, 255, 0.4);
     --color-white: #fff;
+    --color-light: rgba(255, 255, 255, 0.6); */
+
+    --color-bg: #141b10;
+    --color-bg-variant: #1e2a17;
+    --color-primary: #90be6d;
+    --color-primary-variant: rgba(144, 190, 109, 0.4);
+    --color-white: #fff;
     --color-light: rgba(255, 255, 255, 0.6);
+
 
     --transition:all 400ms ease;
 

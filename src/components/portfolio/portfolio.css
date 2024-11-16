@@ -10,11 +10,19 @@ a[disabled], a[disabled]:hover {
 }
 .portfolio_item{
     background: var(--color-bg-variant);
-    padding: 1.3rem;
+    padding: 1rem;
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
 }
+.item_mobile{
+    background: var(--color-bg-variant);
+    padding: 1.2rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
 .portfolio_item:hover{
     border-color: var(--color-primary-variant);
     background: transparent;
@@ -24,12 +32,12 @@ a[disabled], a[disabled]:hover {
     overflow: hidden;
 }
 .portfolio_item h3{
-    margin: 1.2rem 0 2rem;
+    margin: 0.5rem 0 1rem;
 }
 .portfolio_item-cta{
     display: flex;
     gap: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 

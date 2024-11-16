@@ -24,13 +24,6 @@ export const Service = () => {
             <li>
               <BiCheck className="service_list-icon" />
               <p>
-                <b>Engaging Experiences:</b> Creating user experiences that
-                captivate and inform.
-              </p>
-            </li>
-            <li>
-              <BiCheck className="service_list-icon" />
-              <p>
                 <b>Best Practices:</b> Adhering to industry standards and modern
                 coding practices.
               </p>

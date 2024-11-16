@@ -14,12 +14,99 @@ import Edumindz from "../../assets/Edumindz.png";
 import HomeMade_Haven from "../../assets/HomeMade_Haven.png";
 import Portfolio1 from "../../assets/Portfolio1.png";
 import BTC from "../../assets/BTC.jpg";
+import WeatherApp from "../../assets/Weather.jpg";
+import TicTac from "../../assets/TicTac.png";
+import Pixels from "../../assets/Pixels.png";
+import ChatApp from "../../assets/ChatApp.png";
+
 export const Portfolio = () => {
   return (
     <section id="portfolio">
       <h5>My Recent Work </h5>
       <h2>Portfolio</h2>
       <div className="container portfolio_container">
+        {/* Mobile Applications */}
+        <article className="portfolio_item">
+          <div className="portfolio_item-image">
+            <div className="mobile-frame">
+              <div className="mobile-screen">
+                <img src={ChatApp} alt="Mobile App 2" />
+              </div>
+            </div>
+          </div>
+          <h3>Chat App React-Native</h3>
+          {/* <p className="app-details">React Native • Firebase</p> */}
+          <div className="portfolio_item-cta">
+            <a
+              href="https://github.com/sahspeaks/ChatApp-react-native"
+              className="btn"
+              target="_blank"
+            >
+              Github
+            </a>
+          </div>
+        </article>
+        <article className="portfolio_item">
+          <div className="portfolio_item-image">
+            <div className="mobile-frame">
+              <div className="mobile-screen">
+                <img src={Pixels} alt="Mobile App 2" />
+              </div>
+            </div>
+          </div>
+          <h3>Pixels App React-Native</h3>
+          {/* <p className="app-details">React Native • Firebase</p> */}
+          <div className="portfolio_item-cta">
+            <a
+              href="https://github.com/sahspeaks/PixelsApp-react-native"
+              className="btn"
+              target="_blank"
+            >
+              Github
+            </a>
+          </div>
+        </article>
+        <article className="portfolio_item">
+          <div className="portfolio_item-image">
+            <div className="mobile-frame">
+              <div className="mobile-screen">
+                <img src={WeatherApp} alt="Mobile App 2" />
+              </div>
+            </div>
+          </div>
+          <h3>Weather App React-Native</h3>
+          {/* <p className="app-details">React Native • Firebase</p> */}
+          <div className="portfolio_item-cta">
+            <a
+              href="https://github.com/sahspeaks/WeatherApp-react-native"
+              className="btn"
+              target="_blank"
+            >
+              Github
+            </a>
+          </div>
+        </article>
+
+        <article className="portfolio_item">
+          <div className="portfolio_item-image">
+            <div className="mobile-frame">
+              <div className="mobile-screen">
+                <img src={TicTac} alt="Mobile App 1" />
+              </div>
+            </div>
+          </div>
+          <h3>Tic-Tac-Toe React-Native</h3>
+          {/* <p className="app-details">Flutter • Node.js • MongoDB</p> */}
+          <div className="portfolio_item-cta">
+            <a
+              href="https://github.com/sahspeaks/tictactoe-react-native"
+              className="btn"
+              target="_blank"
+            >
+              Github
+            </a>
+          </div>
+        </article>
         <article className="portfolio_item">
           <div className="portfolio_item-image">
             <img src={BTC} alt="BrainTumor-App" />
@@ -335,6 +422,73 @@ export const Portfolio = () => {
           </div>
         </article>
       </div>
+      <style>
+        {`
+          .portfolio_item-image {
+            position: relative;
+            border-radius: 1.5rem;
+            overflow: hidden;
+            height: 280px; /* Maintain consistent height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--color-bg-variant);
+          }
+
+          .portfolio_item-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+
+          .mobile-frame {
+            height: 100%;
+            aspect-ratio: 9/19;
+            background: #2c2c2c;
+            border-radius: 1.5rem;
+            padding: 0.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+          }
+
+          .mobile-screen {
+            width: 100%;
+            height: 100%;
+            border-radius: 1rem;
+            overflow: hidden;
+          }
+
+          .mobile-screen img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+
+          .app-details {
+            color: var(--color-light);
+            font-size: 0.9rem;
+            margin: 0.2rem 0;
+            text-align: center;
+          }
+
+          /* Keep your existing media queries */
+          @media screen and (max-width: 1024px) {
+            .portfolio_container {
+              grid-template-columns: 1fr 1fr;
+              gap: 1.2rem;
+            }
+          }
+
+          @media screen and (max-width: 600px) {
+            .portfolio_container {
+              grid-template-columns: 1fr;
+              gap: 1rem;
+            }
+          }
+        `}
+      </style>
     </section>
   );
 };

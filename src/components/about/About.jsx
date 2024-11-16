@@ -20,13 +20,13 @@ export const About = () => {
             <article className="about_card">
               <FaAward className="about_icon" />
               <h5>Experience</h5>
-              <small>6+ Months </small>
+              <small>1 Year </small>
             </article>
 
             <article className="about_card">
               <VscFolderLibrary className="about_icon" />
               <h5>Projects</h5>
-              <small>10+ Completed</small>
+              <small>15+ Completed</small>
             </article>
           </div>
           <p>
