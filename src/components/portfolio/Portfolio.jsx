@@ -18,6 +18,7 @@ import WeatherApp from "../../assets/Weather.jpg";
 import TicTac from "../../assets/TicTac.png";
 import Pixels from "../../assets/Pixels.png";
 import ChatApp from "../../assets/ChatApp.png";
+import MySTB from "../../assets/MySTB.png";
 
 export const Portfolio = () => {
   return (
@@ -104,6 +105,28 @@ export const Portfolio = () => {
               target="_blank"
             >
               Github
+            </a>
+          </div>
+        </article>
+        <article className="portfolio_item">
+          <div className="portfolio_item-image">
+            <img src={MySTB} alt="MySTB" />
+          </div>
+          <h3>MY STB E-commerce</h3>
+          <div className="portfolio_item-cta">
+            <a
+              href="https://github.com/sahspeaks/dth-ecommerce"
+              className="btn"
+              target="_blank"
+            >
+              Github
+            </a>
+            <a
+              href="https://mystb.netlify.app/"
+              className="btn btn-primary"
+              target="_blank"
+            >
+              Live Demo
             </a>
           </div>
         </article>
