@@ -36,9 +36,6 @@ export const About = () => {
             Javascript. I enjoy exploring new technologies. I am a quick learner
             with a fun, outgoing personality.
           </p>
-          <a href="#contact" className="btn btn-primary">
-            Let's Talk
-          </a>
         </div>
       </div>
     </section>

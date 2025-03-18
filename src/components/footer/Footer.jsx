@@ -6,11 +6,10 @@ import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 
 export const Footer = () => {
+  // Get the current year dynamically
+  const currentYear = new Date().getFullYear();
   return (
     <footer id="footer">
-      <a href="#" className="footer_logo">
-        Abhishek
-      </a>
       <ul className="permalinks">
         <li>
           <a href="#">Home</a>
@@ -59,7 +58,7 @@ export const Footer = () => {
         </a>
       </div>
       <div className="footer_copyright">
-        <small>&copy; Abhishek Kumar. All right reserved.</small>
+        <small>&copy; {currentYear} Abhishek Kumar. All right reserved.</small>
       </div>
     </footer>
   );
