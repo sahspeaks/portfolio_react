@@ -5,13 +5,13 @@ import { AiFillTwitterCircle } from "react-icons/ai";
 export const Footer = () => {
     return (
         <footer id="footer" className="bg-green-400 text-gray-900 mt-32 pt-12 text-center text-sm">
-            <a href="#" className="text-2xl font-semibold mb-8 inline-block hover:text-gray-700 transition-colors duration-300">
+            <a href="#header" className="text-2xl font-semibold mb-8 inline-block hover:text-gray-700 transition-colors duration-300">
                 ABHISHEK
             </a>
 
             <ul className="flex flex-wrap justify-center gap-8 mb-16 sm:gap-6">
                 <li>
-                    <a href="#" className="hover:text-gray-700 transition-colors duration-300">Home</a>
+                    <a href="#header" className="hover:text-gray-700 transition-colors duration-300">Home</a>
                 </li>
                 <li>
                     <a href="#about" className="hover:text-gray-700 transition-colors duration-300">About</a>

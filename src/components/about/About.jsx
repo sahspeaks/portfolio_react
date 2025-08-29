@@ -14,7 +14,7 @@ export const About = () => {
                                                 {/* About Me Image */}
                                                           <div className="w-full aspect-square rounded-3xl bg-gradient-to-br from-transparent via-green-400 to-transparent flex items-center justify-center lg:w-full md:w-1/2 md:mx-auto md:my-8 sm:w-2/3 sm:mx-auto sm:mb-12">
                                                                       <div className="rounded-3xl overflow-hidden transform -rotate-12 hover:rotate-0 transition-all duration-300">
-                                                                                    <img src={ME} alt="my-image" className="block w-full object-cover" />
+                                                                                    <img src={ME} alt="Abhishek Kumar's profile picture" className="block w-full object-cover" />
                                                                                                 </div>
                                                                                                           </div>
                                                                                                                     

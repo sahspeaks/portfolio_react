@@ -11,9 +11,9 @@ export const Nav = () => {
 
   return (
     <nav>
-      <a href="#" onClick={()=>setActive('#') } className={active==='#'?'active':''}><BiHomeAlt2/></a>
+      <a href="#header" onClick={()=>setActive('#header') } className={active==='#header'?'active':''}><BiHomeAlt2/></a>
       <a href="#about" onClick={()=>setActive('#about') } className={active==='#about'?'active':''}><BiUser/></a>
-      <a href="#experiance" onClick={()=>setActive('#experiance') } className={active==='#experiance'?'active':''}><BiBookAlt/></a>
+      <a href="#experience" onClick={()=>setActive('#experience') } className={active==='#experience'?'active':''}><BiBookAlt/></a>
       <a href="#portfolio" onClick={()=>setActive('#portfolio') } className={active==='#portfolio'?'active':''}><GrReactjs/></a>
       <a href="#footer" onClick={()=>setActive('#contact') } className={active==='#contact'?'active':''}><BiMessageSquareDetail/></a>
     </nav>
