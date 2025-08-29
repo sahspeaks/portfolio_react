@@ -1,28 +1,36 @@
 import React from "react";
-import "./contact.css";
 import { HiOutlineMail } from "react-icons/hi";
+
 export const Contact = () => {
   return (
-    <section id="contact">
-      <h5>Get In Touch</h5>
-      <h2>Contact Me</h2>
+      <section id="contact" className="mt-32">
+            <h5 className="text-center text-gray-400 mb-4">Get In Touch</h5>
+                  <h2 className="text-center text-green-400 text-4xl mb-12 font-medium">Contact Me</h2>
 
-      <div className="container contact_container">
-        <div className="contact_options">
-          <article className="contact_option">
-            <HiOutlineMail />
-            <h4>Email</h4>
-            <h5>sahspeaks@gmail.com</h5>
-            <a href="mailto:sahspeaks@gmail.com">Send Mail</a>
-          </article>
-          <article className="contact_option">
-            <HiOutlineMail />
-            <h4>WhatsApp</h4>
-            <h5>+91123456789</h5>
-            <a href="https://api.whatsapp.com/send?phone=">Send Mail</a>
-          </article>
-        </div>
-      </div>
-    </section>
-  );
-};
+                        <div className="container mx-auto w-3/4 lg:w-3/4 md:w-5/6 sm:w-11/12">
+                                <div className="flex justify-center">
+                                          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                                      <article className="bg-gray-800 border border-transparent rounded-2xl p-8 text-center hover:bg-transparent hover:border-green-300 transition-all duration-300">
+                                                                    <HiOutlineMail className="text-green-400 text-2xl mb-4 mx-auto" />
+                                                                                  <h4 className="text-lg mb-2">Email</h4>
+                                                                                                <h5 className="text-base mb-4 text-gray-400">sahspeaks@gmail.com</h5>
+                                                                                                              <a href="mailto:sahspeaks@gmail.com" className="text-green-400 hover:text-white transition-all duration-300">
+                                                                                                                              Send Mail
+                                                                                                                                            </a>
+                                                                                                                                                        </article>
+                                                                                                                                                                    
+                                                                                                                                                                                <article className="bg-gray-800 border border-transparent rounded-2xl p-8 text-center hover:bg-transparent hover:border-green-300 transition-all duration-300">
+                                                                                                                                                                                              <HiOutlineMail className="text-green-400 text-2xl mb-4 mx-auto" />
+                                                                                                                                                                                                            <h4 className="text-lg mb-2">WhatsApp</h4>
+                                                                                                                                                                                                                          <h5 className="text-base mb-4 text-gray-400">+91123456789</h5>
+                                                                                                                                                                                                                                        <a href="https://api.whatsapp.com/send?phone=" className="text-green-400 hover:text-white transition-all duration-300">
+                                                                                                                                                                                                                                                        Send Message
+                                                                                                                                                                                                                                                                      </a>
+                                                                                                                                                                                                                                                                                  </article>
+                                                                                                                                                                                                                                                                                            </div>
+                                                                                                                                                                                                                                                                                                    </div>
+                                                                                                                                                                                                                                                                                                          </div>
+                                                                                                                                                                                                                                                                                                              </section>
+                                                                                                                                                                                                                                                                                                                );
+                                                                                                                                                                                                                                                                                                                };
+                                                                                                                                                                                                                                                                                                                
