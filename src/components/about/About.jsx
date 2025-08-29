@@ -1,4 +1,3 @@
-import "./about.css";
 import ME from "../../assets/user.jpg";
 import React from "react";
 import { FaAward } from "react-icons/fa";
@@ -6,38 +5,46 @@ import { VscFolderLibrary } from "react-icons/vsc";
 
 export const About = () => {
   return (
-    <section id="about">
-      <h5>Get To Know</h5>
-      <h2>About Me</h2>
-      <div className="container about_container">
-        <div className="about_me">
-          <div className="about_me-image">
-            <img src={ME} alt="my-image" />
-          </div>
-        </div>
-        <div className="about_content">
-          <div className="about_cards">
-            <article className="about_card">
-              <FaAward className="about_icon" />
-              <h5>Experience</h5>
-              <small>1 Year </small>
-            </article>
-
-            <article className="about_card">
-              <VscFolderLibrary className="about_icon" />
-              <h5>Projects</h5>
-              <small>15+ Completed</small>
-            </article>
-          </div>
-          <p>
-            Dedicated Full-Stack Web Developer with a strong academic background
-            in Computer Science. Skilled in building responsive web applications
-            using cutting-edge technologies like React JS, Tailwind CSS,
-            Javascript. I enjoy exploring new technologies. I am a quick learner
-            with a fun, outgoing personality.
-          </p>
-        </div>
-      </div>
-    </section>
-  );
-};
+      <section id="about" className="mt-32">
+            <h5 className="text-center text-gray-400 mb-4">Get To Know</h5>
+                  <h2 className="text-center text-green-400 text-4xl mb-12 font-medium">About Me</h2>
+                        
+                              <div className="container mx-auto w-3/4 lg:w-3/4 md:w-5/6 sm:w-11/12">
+                                      <div className="grid grid-cols-1 lg:grid-cols-[35%_50%] gap-[15%]">
+                                                {/* About Me Image */}
+                                                          <div className="w-full aspect-square rounded-3xl bg-gradient-to-br from-transparent via-green-400 to-transparent flex items-center justify-center lg:w-full md:w-1/2 md:mx-auto md:my-8 sm:w-2/3 sm:mx-auto sm:mb-12">
+                                                                      <div className="rounded-3xl overflow-hidden transform -rotate-12 hover:rotate-0 transition-all duration-300">
+                                                                                    <img src={ME} alt="my-image" className="block w-full object-cover" />
+                                                                                                </div>
+                                                                                                          </div>
+                                                                                                                    
+                                                                                                                              {/* About Content */}
+                                                                                                                                        <div className="sm:text-center">
+                                                                                                                                                    {/* About Cards */}
+                                                                                                                                                                <div className="grid grid-cols-2 gap-6 mb-8 sm:gap-4">
+                                                                                                                                                                              <article className="bg-gray-800 border border-transparent rounded-3xl p-8 text-center hover:bg-transparent hover:border-green-300 transition-all duration-300 cursor-default sm:p-6">
+                                                                                                                                                                                              <FaAward className="text-green-400 text-2xl mb-4 mx-auto" />
+                                                                                                                                                                                                              <h5 className="text-base mb-1">Experience</h5>
+                                                                                                                                                                                                                              <small className="text-xs text-gray-400">1 Year</small>
+                                                                                                                                                                                                                                            </article>
+                                                                                                                                                                                                                                                          
+                                                                                                                                                                                                                                                                        <article className="bg-gray-800 border border-transparent rounded-3xl p-8 text-center hover:bg-transparent hover:border-green-300 transition-all duration-300 cursor-default sm:p-6">
+                                                                                                                                                                                                                                                                                        <VscFolderLibrary className="text-green-400 text-2xl mb-4 mx-auto" />
+                                                                                                                                                                                                                                                                                                        <h5 className="text-base mb-1">Projects</h5>
+                                                                                                                                                                                                                                                                                                                        <small className="text-xs text-gray-400">15+ Completed</small>
+                                                                                                                                                                                                                                                                                                                                      </article>
+                                                                                                                                                                                                                                                                                                                                                  </div>
+                                                                                                                                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                                                                                                                                          <p className="my-8 text-gray-400 sm:my-6">
+                                                                                                                                                                                                                                                                                                                                                                                        Dedicated Full-Stack Web Developer with a strong academic background
+                                                                                                                                                                                                                                                                                                                                                                                                      in Computer Science. Skilled in building responsive web applications
+                                                                                                                                                                                                                                                                                                                                                                                                                    using cutting-edge technologies like React JS, Tailwind CSS,
+                                                                                                                                                                                                                                                                                                                                                                                                                                  Javascript. I enjoy exploring new technologies. I am a quick learner
+                                                                                                                                                                                                                                                                                                                                                                                                                                                with a fun, outgoing personality.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                            </p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                      </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                              </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </section>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          );
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          };
