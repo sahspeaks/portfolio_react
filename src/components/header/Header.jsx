@@ -20,7 +20,7 @@ export const Header = () => {
           <CTA />
           <HeaderSocial />
 
-          <div className="bg-gradient-to-b from-green-400 to-transparent w-80 sm:w-96 md:w-[28rem] h-[30rem] md:h-[40rem] absolute left-1/2 transform -translate-x-1/2 mt-16 rounded-t-[12rem] overflow-hidden py-20 px-6">
+          <div className="bg-gradient-to-b from-[#90be6d] to-transparent w-80 sm:w-96 md:w-[28rem] h-[30rem] md:h-[40rem] absolute left-1/2 transform -translate-x-1/2 mt-16 rounded-t-[12rem] overflow-hidden py-20 px-6">
             <img src={ME} alt="" className="block w-full h-full object-cover" />
           </div>
         </div>
