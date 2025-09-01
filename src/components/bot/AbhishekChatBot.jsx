@@ -11,9 +11,11 @@ import {
   Globe,
   X,
 } from "lucide-react";
-import { BASE_URL } from "../../server/BaseUrl";
-import ME from "../../assets/me3.png";
 
+import ME from "../../assets/me3.png";
+import { BASE_URL } from "../../server/BaseUrl";
+
+console.log("Base URL:", BASE_URL);
 const TONE_OPTIONS = {
   default: { label: "Natural", desc: "Balanced conversation", emoji: "💬" },
   technical: { label: "Technical", desc: "Tech-focused insights", emoji: "⚡" },
@@ -47,6 +49,7 @@ const AbhishekChatbot = ({ isOpen, onClose }) => {
   // Check API health and load persona info
   useEffect(() => {
     if (isOpen) {
+      console.log("Checking API health...", BASE_URL);
       checkApiHealth();
       loadPersonaInfo();
     }
