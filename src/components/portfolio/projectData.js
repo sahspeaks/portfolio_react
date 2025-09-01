@@ -1,186 +1,188 @@
-
 // projectData.js - Centralized project data
 export const webProjectsData = [
-    {
-        id: 'mystb',
-        title: 'MY STB E-commerce',
-        image: require('../../assets/MySTB.png'),
-        github: 'https://github.com/sahspeaks/dth-ecommerce',
-        liveDemo: 'https://mystb.netlify.app/',
-        disabled: false
-    },
-    {
-        id: 'btc',
-        title: 'Brain Tumor Classifier',
-        image: require('../../assets/BTC.jpg'),
-        github: 'https://github.com/sahspeaks/brain-tumor-webapp',
-        liveDemo: '',
-        disabled: true
-    },
-    {
-        id: 'homemade',
-        title: 'HomeMade Haven',
-        image: require('../../assets/HomeMade_Haven.png'),
-        github: 'https://github.com/sahspeaks/react_food_delivery',
-        liveDemo: '',
-        disabled: true
-    },
-    {
-        id: 'edumindz',
-        title: 'Edumindz',
-        image: require('../../assets/Edumindz.png'),
-        github: 'https://github.com/sahspeaks/Edumindz',
-        liveDemo: 'https://edumindz.netlify.app',
-        disabled: false
-    },
-    {
-        id: 'notes',
-        title: 'MyNotes',
-        image: require('../../assets/Notes.png'),
-        github: 'https://github.com/sahspeaks/Word-Analyzer',
-        liveDemo: 'https://makemynotes.netlify.app/',
-        disabled: false
-    },
-    {
-        id: 'word',
-        title: 'Word-Analyser',
-        image: require('../../assets/Word-Analyser.png'),
-        github: 'https://github.com/sahspeaks/Word-Analyzer',
-        liveDemo: 'https://word-analyzer.vercel.app/',
-        disabled: false
-    },
-    {
-        id: 'portfolio',
-        title: 'Portfolio',
-        image: require('../../assets/Portfolio.png'),
-        github: 'https://github.com/sahspeaks/MyPortfolio',
-        liveDemo: 'https://sahspeaks.netlify.app/',
-        disabled: false
-    },
-    {
-        id: 'news',
-        title: 'News Nation',
-        image: require('../../assets/News-App.png'),
-        github: 'https://github.com/sahspeaks/News-App',
-        liveDemo: 'https://github.com/',
-        disabled: true
-    },
-    {
-        id: 'todo',
-        title: 'Todo-List',
-        image: require('../../assets/ToDoList.png'),
-        github: 'https://github.com/sahspeaks/todo_list',
-        liveDemo: 'https://todolist-app-iou8.onrender.com/',
-        disabled: false
-    },
-    {
-        id: 'calculator',
-        title: 'Calculator',
-        image: require('../../assets/Calculator.png'),
-        github: 'https://github.com/sahspeaks/Calculator',
-        liveDemo: 'https://sahspeaks.github.io/Calculator/',
-        disabled: false
-    },
-    {
-        id: 'temp',
-        title: 'Temperature-Converter',
-        image: require('../../assets/Temp-Converter.png'),
-        github: 'https://github.com/sahspeaks/Temperature-Converter',
-        liveDemo: 'https://sahspeaks.github.io/Temperature-Converter/',
-        disabled: false
-    },
-    {
-        id: 'weather',
-        title: 'Weather-App',
-        image: require('../../assets/Weather-App.png'),
-        github: 'https://github.com/sahspeaks/weather-App2.0',
-        liveDemo: 'https://github.com/',
-        disabled: true
-    },
-    {
-        id: 'kinder',
-        title: 'Kinder-A Dating App',
-        image: require('../../assets/Kinder.png'),
-        github: 'https://github.com/sahspeaks/Kinder',
-        liveDemo: 'https://sahspeaks.github.io/Kinder/',
-        disabled: false
-    },
-    {
-        id: 'hunger',
-        title: 'Hunger',
-        image: require('../../assets/Hunger.png'),
-        github: 'https://github.com/sahspeaks/Hunger',
-        liveDemo: 'https://sahspeaks.github.io/Hunger/',
-        disabled: false
-    },
-    {
-        id: 'portfolio1',
-        title: 'Portfolio',
-        image: require('../../assets/Portfolio1.png'),
-        github: 'https://github.com/sahspeaks/Portfolio',
-        liveDemo: 'https://sahspeaks.github.io/Portfolio/',
-        disabled: false
-    }
+  {
+    id: "mystb",
+    title: "MY STB E-commerce",
+    image: require("../../assets/MySTB.png"),
+    github: "https://github.com/sahspeaks/dth-ecommerce",
+    liveDemo: "https://mystb.netlify.app/",
+    disabled: false,
+  },
+  {
+    id: "btc",
+    title: "Brain Tumor Classifier",
+    image: require("../../assets/BTC.jpg"),
+    github: "https://github.com/sahspeaks/brain-tumor-webapp",
+    liveDemo: "",
+    disabled: true,
+  },
+  {
+    id: "homemade",
+    title: "HomeMade Haven",
+    image: require("../../assets/HomeMade_Haven.png"),
+    github: "https://github.com/sahspeaks/react_food_delivery",
+    liveDemo: "",
+    disabled: true,
+  },
+  {
+    id: "edumindz",
+    title: "Edumindz",
+    image: require("../../assets/Edumindz.png"),
+    github: "https://github.com/sahspeaks/Edumindz",
+    liveDemo: "https://edumindz.netlify.app",
+    disabled: false,
+  },
+  {
+    id: "notes",
+    title: "MyNotes",
+    image: require("../../assets/Notes.png"),
+    github: "https://github.com/sahspeaks/Word-Analyzer",
+    liveDemo: "https://makemynotes.netlify.app/",
+    disabled: false,
+  },
+  {
+    id: "word",
+    title: "Word-Analyser",
+    image: require("../../assets/Word-Analyser.png"),
+    github: "https://github.com/sahspeaks/Word-Analyzer",
+    liveDemo: "https://word-analyzer.vercel.app/",
+    disabled: false,
+  },
+  {
+    id: "portfolio",
+    title: "Portfolio",
+    image: require("../../assets/Portfolio.png"),
+    github: "https://github.com/sahspeaks/MyPortfolio",
+    liveDemo: "https://sahspeaks.netlify.app/",
+    disabled: false,
+  },
+  {
+    id: "news",
+    title: "News Nation",
+    image: require("../../assets/News-App.png"),
+    github: "https://github.com/sahspeaks/News-App",
+    liveDemo: "https://github.com/",
+    disabled: true,
+  },
+  {
+    id: "todo",
+    title: "Todo-List",
+    image: require("../../assets/ToDoList.png"),
+    github: "https://github.com/sahspeaks/todo_list",
+    liveDemo: "https://todolist-app-iou8.onrender.com/",
+    disabled: false,
+  },
+  {
+    id: "calculator",
+    title: "Calculator",
+    image: require("../../assets/Calculator.png"),
+    github: "https://github.com/sahspeaks/Calculator",
+    liveDemo: "https://sahspeaks.github.io/Calculator/",
+    disabled: false,
+  },
+  {
+    id: "temp",
+    title: "Temperature-Converter",
+    image: require("../../assets/Temp-Converter.png"),
+    github: "https://github.com/sahspeaks/Temperature-Converter",
+    liveDemo: "https://sahspeaks.github.io/Temperature-Converter/",
+    disabled: false,
+  },
+  {
+    id: "weather",
+    title: "Weather-App",
+    image: require("../../assets/Weather-App.png"),
+    github: "https://github.com/sahspeaks/weather-App2.0",
+    liveDemo: "https://github.com/",
+    disabled: true,
+  },
+  {
+    id: "kinder",
+    title: "Kinder-A Dating App",
+    image: require("../../assets/Kinder.png"),
+    github: "https://github.com/sahspeaks/Kinder",
+    liveDemo: "https://sahspeaks.github.io/Kinder/",
+    disabled: false,
+  },
+  {
+    id: "hunger",
+    title: "Hunger",
+    image: require("../../assets/Hunger.png"),
+    github: "https://github.com/sahspeaks/Hunger",
+    liveDemo: "https://sahspeaks.github.io/Hunger/",
+    disabled: false,
+  },
+  {
+    id: "portfolio1",
+    title: "Portfolio",
+    image: require("../../assets/Portfolio1.png"),
+    github: "https://github.com/sahspeaks/Portfolio",
+    liveDemo: "https://sahspeaks.github.io/Portfolio/",
+    disabled: false,
+  },
 ];
 
 export const mobileProjectsData = [
-    {
-        id: 'chatapp',
-        title: 'Chat App React-Native',
-        image: require('../../assets/ChatApp.png'),
-        github: 'https://github.com/sahspeaks/ChatApp-react-native',
-        technologies: 'React Native • Firebase'
-    },
-    {
-        id: 'pixels',
-        title: 'Pixels App React-Native',
-        image: require('../../assets/Pixels.png'),
-        github: 'https://github.com/sahspeaks/PixelsApp-react-native',
-        technologies: 'React Native • API'
-    },
-    {
-        id: 'weatherapp',
-        title: 'Weather App React-Native',
-        image: require('../../assets/Weather.jpg'),
-        github: 'https://github.com/sahspeaks/WeatherApp-react-native',
-        technologies: 'React Native • Weather API'
-    },
-    {
-        id: 'tictac',
-        title: 'Tic-Tac-Toe React-Native',
-        image: require('../../assets/TicTac.png'),
-        github: 'https://github.com/sahspeaks/tictactoe-react-native',
-        technologies: 'React Native • Game Logic'
-    }
+  {
+    id: "chatapp",
+    title: "Chat App React-Native",
+    image: require("../../assets/ChatApp.png"),
+    github: "https://github.com/sahspeaks/ChatApp-react-native",
+    technologies: "React Native • Firebase",
+  },
+  {
+    id: "pixels",
+    title: "Pixels App React-Native",
+    image: require("../../assets/Pixels.png"),
+    github: "https://github.com/sahspeaks/PixelsApp-react-native",
+    technologies: "React Native • API",
+  },
+  {
+    id: "weatherapp",
+    title: "Weather App React-Native",
+    image: require("../../assets/Weather.jpg"),
+    github: "https://github.com/sahspeaks/WeatherApp-react-native",
+    technologies: "React Native • Weather API",
+  },
+  {
+    id: "tictac",
+    title: "Tic-Tac-Toe React-Native",
+    image: require("../../assets/TicTac.png"),
+    github: "https://github.com/sahspeaks/tictactoe-react-native",
+    technologies: "React Native • Game Logic",
+  },
 ];
 
 export const contributedProjectsData = [
-    {
-        id: 'moonsflare',
-        title: 'Moonsflare Style Store',
-        image: require('../../assets/Moonsflare.png'),
-        description: 'Developed inventory management system and order processing workflows',
-        contribution: 'Backend Development',
-        liveUrl: 'https://moonsflare.com',
-        isProduction: true
-    },
-    {
-        id: 'atnatic',
-        title: 'Atnatic Streetwear',
-        image: require('../../assets/Atnatic.png'),
-        description: 'Implemented cart functionality, payment gateway, and BlueDart integration',
-        contribution: 'Backend Development',
-        liveUrl: 'https://atnatic.com',
-        isProduction: true
-    },
-    {
-        id: 'mystb-contrib',
-        title: 'MY STB E-commerce',
-        image: require('../../assets/MySTB.png'),
-        description: 'Full-stack development of DTH services marketplace with product customization',
-        contribution: 'Full-stack Development (Solo)',
-        githubUrl: 'https://github.com/sahspeaks/dth-ecommerce',
-        liveUrl: 'https://mystb.netlify.app/',
-        isProduction: true
-    }
+  {
+    id: "moonsflare",
+    title: "Moonsflare Style Store",
+    image: require("../../assets/Moonsflare.png"),
+    description:
+      "Developed inventory management system and order processing workflows",
+    contribution: "Backend Development",
+    liveUrl: "https://moonsflare.com",
+    isProduction: true,
+  },
+  {
+    id: "atnatic",
+    title: "Atnatic Streetwear",
+    image: require("../../assets/Atnatic.png"),
+    description:
+      "Implemented cart functionality, payment gateway, and BlueDart integration",
+    contribution: "Backend Development",
+    liveUrl: "https://atnatic.com",
+    isProduction: true,
+  },
+  {
+    id: "mystb-contrib",
+    title: "MY STB E-commerce",
+    image: require("../../assets/MySTB.png"),
+    description:
+      "Full-stack development of DTH services marketplace with product customization",
+    contribution: "Full-stack Development (Solo)",
+    githubUrl: "https://github.com/sahspeaks/dth-ecommerce",
+    liveUrl: "https://mystb.netlify.app/",
+    isProduction: true,
+  },
 ];

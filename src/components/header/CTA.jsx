@@ -1,54 +1,24 @@
 import React from "react";
 import CV from "../../assets/CV.pdf";
-import { BsLinkedin, BsGithub, BsInstagram } from "react-icons/bs";
 
 export const CTA = () => {
   return (
-      <>
-            <div className="mt-10 flex gap-5 justify-center">
-                    <a 
-                              href={CV} 
-                                        download={true} 
-                                                  className="w-max inline-block text-green-400 py-3 px-5 rounded-lg cursor-pointer border border-green-400 transition-all duration-300 hover:bg-white hover:text-gray-900 hover:border-transparent"
-                                                          >
-                                                                    Download CV
-                                                                            </a>
-                                                                                    <a 
-                                                                                              href="mailto:sahspeaks@gmail.com" 
-                                                                                                        className="w-max inline-block bg-green-400 text-gray-900 py-3 px-5 rounded-lg cursor-pointer border border-green-400 transition-all duration-300 hover:bg-white hover:text-gray-900 hover:border-transparent"
-                                                                                                                >
-                                                                                                                          Let's Talk
-                                                                                                                                  </a>
-                                                                                                                                        </div>
-                                                                                                                                              
-                                                                                                                                                    <div className="flex flex-col items-center gap-3 absolute left-0 bottom-12">
-                                                                                                                                                            <a
-                                                                                                                                                                      href="https://www.linkedin.com/in/sahspeaks/"
-                                                                                                                                                                                target="_blank"
-                                                                                                                                                                                          rel="noopener noreferrer"
-                                                                                                                                                                                                    className="text-green-400 hover:text-white transition-all duration-300"
-                                                                                                                                                                                                            >
-                                                                                                                                                                                                                      <BsLinkedin />
-                                                                                                                                                                                                                              </a>
-                                                                                                                                                                                                                                      <a 
-                                                                                                                                                                                                                                                href="https://github.com/sahspeaks" 
-                                                                                                                                                                                                                                                          target="_blank"
-                                                                                                                                                                                                                                                                    rel="noopener noreferrer"
-                                                                                                                                                                                                                                                                              className="text-green-400 hover:text-white transition-all duration-300"
-                                                                                                                                                                                                                                                                                      >
-                                                                                                                                                                                                                                                                                                <BsGithub />
-                                                                                                                                                                                                                                                                                                        </a>
-                                                                                                                                                                                                                                                                                                                <a
-                                                                                                                                                                                                                                                                                                                          href="https://www.instagram.com/sah_speaks/"
-                                                                                                                                                                                                                                                                                                                                    target="_blank"
-                                                                                                                                                                                                                                                                                                                                              rel="noopener noreferrer"
-                                                                                                                                                                                                                                                                                                                                                        className="text-green-400 hover:text-white transition-all duration-300"
-                                                                                                                                                                                                                                                                                                                                                                >
-                                                                                                                                                                                                                                                                                                                                                                          <BsInstagram />
-                                                                                                                                                                                                                                                                                                                                                                                  </a>
-                                                                                                                                                                                                                                                                                                                                                                                          <div className="w-px h-8 bg-green-400"></div>
-                                                                                                                                                                                                                                                                                                                                                                                                </div>
-                                                                                                                                                                                                                                                                                                                                                                                                    </>
-                                                                                                                                                                                                                                                                                                                                                                                                      );
-                                                                                                                                                                                                                                                                                                                                                                                                      };
-                                                                                                                                                                                                                                                                                                                                                                                                      
+    <>
+      <div className="mt-10 flex gap-5 justify-center sm:justify-start">
+        <a
+          href={CV}
+          download={true}
+          className="w-max inline-block text-[#90be6d] py-3 px-5 rounded-lg cursor-pointer border border-green-400 transition-all duration-300 hover:bg-white hover:text-gray-900 hover:border-transparent"
+        >
+          Download CV
+        </a>
+        <a
+          href="mailto:sahspeaks@gmail.com"
+          className="w-max inline-block bg-[#90be6d] text-gray-900 py-3 px-5 rounded-lg cursor-pointer border border-green-400 transition-all duration-300 hover:bg-white hover:text-gray-900 hover:border-transparent"
+        >
+          Let's Talk
+        </a>
+      </div>
+    </>
+  );
+};
