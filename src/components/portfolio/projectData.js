@@ -1,6 +1,22 @@
 // projectData.js - Centralized project data
 export const webProjectsData = [
   {
+    id: "PDF RAG",
+    title: "PDF RAG AI",
+    image: require("../../assets/AI_RAG.png"),
+    github: "https://github.com/sahspeaks/PDF_RAG",
+    liveDemo: "https://rag.sahspeaks.com",
+    disabled: false,
+  },
+  {
+    id: "chatbot",
+    title: "Persona Chatbot AI",
+    image: require("../../assets/AI_PERSONA.png"),
+    github: "https://github.com/sahspeaks/bot-backend",
+    liveDemo: "https://sahspeaks.com",
+    disabled: false,
+  },
+  {
     id: "mystb",
     title: "MY STB E-commerce",
     image: require("../../assets/MySTB.png"),
