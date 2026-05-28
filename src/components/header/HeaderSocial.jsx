@@ -7,41 +7,39 @@ import {
 } from "react-icons/ai";
 
 export const HeaderSocial = () => {
+  const links = [
+    { href: "https://www.linkedin.com/in/sahspeaks/", icon: <AiFillLinkedin size={16} /> },
+    { href: "https://github.com/sahspeaks", icon: <AiFillGithub size={16} /> },
+    { href: "https://twitter.com/Sah_speaks", icon: <AiFillTwitterCircle size={16} /> },
+    { href: "https://www.instagram.com/sah_speaks/", icon: <AiFillInstagram size={16} /> },
+  ];
+
   return (
-    <div className="flex flex-col items-center gap-3 absolute left-0 bottom-12">
-      <a
-        href="https://www.linkedin.com/in/sahspeaks/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-[#90be6d] hover:text-white transition-all duration-300"
-      >
-        <AiFillLinkedin />
-      </a>
-      <a
-        href="https://github.com/sahspeaks"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-[#90be6d] hover:text-white transition-all duration-300"
-      >
-        <AiFillGithub />
-      </a>
-      <a
-        href="https://twitter.com/Sah_speaks"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-[#90be6d] hover:text-white transition-all duration-300"
-      >
-        <AiFillTwitterCircle />
-      </a>
-      <a
-        href="https://www.instagram.com/sah_speaks/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-[#90be6d] hover:text-white transition-all duration-300"
-      >
-        <AiFillInstagram />
-      </a>
-      <div className="w-px h-8 bg-[#90be6d]"></div>
+    <div className="flex items-center gap-1">
+      {links.map((l, i) => (
+        <a
+          key={i}
+          href={l.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            padding: 6,
+            borderRadius: 6,
+            color: "var(--text-dim)",
+            transition: "all .15s",
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.color = "var(--accent)";
+            e.currentTarget.style.background = "var(--surface-3)";
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.color = "var(--text-dim)";
+            e.currentTarget.style.background = "transparent";
+          }}
+        >
+          {l.icon}
+        </a>
+      ))}
     </div>
   );
 };

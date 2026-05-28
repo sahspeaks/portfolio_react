@@ -5,53 +5,86 @@ import { VscFolderLibrary } from "react-icons/vsc";
 
 export const About = () => {
   return (
-    <section id="about" className="mt-32 px-4">
-      <h5 className="text-center text-gray-400 mb-4">Get To Know</h5>
-      <h2 className="text-center text-[#90be6d] text-4xl mb-12 font-medium">
-        About Me
-      </h2>
-
+    <section id="about" className="mt-32 px-4 fade-up">
       <div className="container mx-auto max-w-6xl">
-        <div className="grid grid-cols-1 lg:grid-cols-[35%_50%] gap-8 lg:gap-[15%]">
-          {/* About Me Image */}
-          <div className="w-full max-w-sm mx-auto lg:max-w-none aspect-square rounded-3xl flex items-center justify-center">
-            {/* Mobile Image */}
-            <div className="lg:hidden rounded-3xl overflow-hidden w-full h-full">
-              <img
-                src={ME2}
-                alt="Abhishek Kumar's profile picture"
-                className="block w-full h-full object-contain"
-              />
-            </div>
+        <div className="flex items-center gap-3 mb-6">
+          <span className="sect-eyebrow">// About</span>
+          <h2 style={{ fontSize: 28, fontWeight: 600 }}>Get to know me</h2>
+        </div>
 
-            {/* Desktop Image */}
-            <div className="hidden lg:block rounded-3xl overflow-hidden w-full h-full">
-              <img
-                src={ME}
-                alt="Abhishek Kumar's profile picture"
-                className="block w-full h-full object-contain"
-              />
+        <div className="grid grid-cols-1 lg:grid-cols-[35%_1fr] gap-8 lg:gap-[8%]">
+          {/* Profile image card */}
+          <div className="w-full max-w-sm mx-auto lg:max-w-none">
+            <div className="card card-lift overflow-hidden">
+              <div className="lg:hidden">
+                <img
+                  src={ME2}
+                  alt="Abhishek Kumar"
+                  className="block w-full h-full object-contain"
+                />
+              </div>
+              <div className="hidden lg:block">
+                <img
+                  src={ME}
+                  alt="Abhishek Kumar"
+                  className="block w-full h-full object-contain"
+                />
+              </div>
             </div>
           </div>
 
-          {/* About Content */}
+          {/* Content */}
           <div className="text-center lg:text-left">
-            {/* About Cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6 mb-8">
-              <article className="bg-gray-800 border border-transparent rounded-3xl p-6 lg:p-8 text-center hover:bg-transparent hover:border-green-300 transition-all duration-300 cursor-default">
-                <FaAward className="text-[#90be6d] text-2xl mb-4 mx-auto" />
-                <h5 className="text-base mb-1">Experience</h5>
-                <small className="text-xs text-gray-400">1 Year</small>
-              </article>
+            {/* Stat cards */}
+            <div className="grid grid-cols-2 gap-3 mb-8">
+              <div className="card card-pad card-lift" style={{ cursor: "default" }}>
+                <div className="flex items-center gap-2 mb-3">
+                  <div
+                    style={{
+                      width: 32,
+                      height: 32,
+                      borderRadius: 8,
+                      background: "var(--accent-soft)",
+                      border: "1px solid var(--accent-edge)",
+                      display: "grid",
+                      placeItems: "center",
+                    }}
+                  >
+                    <FaAward style={{ color: "var(--accent)", fontSize: 14 }} />
+                  </div>
+                  <span className="mono faint" style={{ fontSize: 10.5, letterSpacing: ".08em", textTransform: "uppercase" }}>
+                    Experience
+                  </span>
+                </div>
+                <div className="mono" style={{ fontSize: 26, fontWeight: 600 }}>1+</div>
+                <div className="dim" style={{ fontSize: 12, marginTop: 2 }}>Years in industry</div>
+              </div>
 
-              <article className="bg-gray-800 border border-transparent rounded-3xl p-6 lg:p-8 text-center hover:bg-transparent hover:border-green-300 transition-all duration-300 cursor-default">
-                <VscFolderLibrary className="text-[#90be6d] text-2xl mb-4 mx-auto" />
-                <h5 className="text-base mb-1">Projects</h5>
-                <small className="text-xs text-gray-400">15+ Completed</small>
-              </article>
+              <div className="card card-pad card-lift" style={{ cursor: "default" }}>
+                <div className="flex items-center gap-2 mb-3">
+                  <div
+                    style={{
+                      width: 32,
+                      height: 32,
+                      borderRadius: 8,
+                      background: "rgba(106,166,255,.14)",
+                      border: "1px solid rgba(106,166,255,.22)",
+                      display: "grid",
+                      placeItems: "center",
+                    }}
+                  >
+                    <VscFolderLibrary style={{ color: "var(--info)", fontSize: 14 }} />
+                  </div>
+                  <span className="mono faint" style={{ fontSize: 10.5, letterSpacing: ".08em", textTransform: "uppercase" }}>
+                    Projects
+                  </span>
+                </div>
+                <div className="mono" style={{ fontSize: 26, fontWeight: 600 }}>15+</div>
+                <div className="dim" style={{ fontSize: 12, marginTop: 2 }}>Built & shipped</div>
+              </div>
             </div>
 
-            <p className="text-gray-400 leading-relaxed">
+            <p style={{ color: "var(--text-dim)", lineHeight: 1.7, fontSize: 14 }}>
               Dedicated Full-Stack Web Developer with a strong academic
               background in Computer Science. Skilled in building responsive web
               applications using cutting-edge technologies like React JS,

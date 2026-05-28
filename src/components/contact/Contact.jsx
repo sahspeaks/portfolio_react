@@ -3,28 +3,49 @@ import { HiOutlineMail } from "react-icons/hi";
 
 export const Contact = () => {
   return (
-    <section id="contact" className="mt-32">
-      <h5 className="text-center text-gray-400 mb-4">Get In Touch</h5>
-      <h2 className="text-center text-[#90be6d] text-4xl mb-12 font-medium">
-        Contact Me
-      </h2>
-
+    <section id="contact" className="mt-32 fade-up">
       <div className="container mx-auto w-3/4 lg:w-3/4 md:w-5/6 sm:w-11/12">
+        <div className="flex items-center gap-3 mb-8">
+          <span className="sect-eyebrow">// Contact</span>
+          <h2 style={{ fontSize: 28, fontWeight: 600 }}>Get in touch</h2>
+        </div>
+
         <div className="flex justify-center">
-          <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
-            <article className="bg-gray-800 border border-transparent rounded-2xl p-8 text-center hover:bg-transparent hover:border-green-300 transition-all duration-300">
-              <HiOutlineMail className="text-[#90be6d] text-2xl mb-4 mx-auto" />
-              <h4 className="text-lg mb-2">Email</h4>
-              <h5 className="text-base mb-4 text-gray-400">
-                sahspeaks@gmail.com
-              </h5>
-              <a
-                href="mailto:sahspeaks@gmail.com"
-                className="text-[#90be6d] hover:text-white transition-all duration-300"
-              >
-                Send Mail
-              </a>
-            </article>
+          <div
+            className="card card-lift"
+            style={{
+              padding: "28px 40px",
+              textAlign: "center",
+              cursor: "default",
+              maxWidth: 400,
+              width: "100%",
+            }}
+          >
+            <div
+              style={{
+                width: 48,
+                height: 48,
+                borderRadius: 12,
+                background: "var(--accent-soft)",
+                border: "1px solid var(--accent-edge)",
+                display: "grid",
+                placeItems: "center",
+                margin: "0 auto 16px",
+              }}
+            >
+              <HiOutlineMail style={{ color: "var(--accent)", fontSize: 22 }} />
+            </div>
+            <h4 style={{ fontSize: 17, fontWeight: 600, marginBottom: 4 }}>Email</h4>
+            <p className="dim" style={{ fontSize: 14, marginBottom: 16 }}>
+              sahspeaks@gmail.com
+            </p>
+            <a
+              href="mailto:sahspeaks@gmail.com"
+              className="btn btn-primary"
+              style={{ margin: "0 auto" }}
+            >
+              Send Mail
+            </a>
           </div>
         </div>
       </div>

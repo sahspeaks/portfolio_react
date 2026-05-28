@@ -39,11 +39,11 @@ function App() {
           width: "60px",
           height: "60px",
           borderRadius: "50%",
-          background: "linear-gradient(135deg, #90be6d, #141b10)",
+          background: "linear-gradient(135deg, #ff6b3d, #0a0b0f)",
           border: "none",
           cursor: "pointer",
           zIndex: 1001,
-          boxShadow: "0 8px 25px rgba(144, 190, 109, 0.3)",
+          boxShadow: "0 8px 25px rgba(255, 107, 61, 0.3)",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
@@ -64,7 +64,7 @@ function App() {
       <style jsx>{`
         .chatbot-toggle:hover {
           transform: scale(1.05);
-          box-shadow: 0 12px 35px rgba(144, 190, 109, 0.4) !important;
+          box-shadow: 0 12px 35px rgba(255, 107, 61, 0.4) !important;
         }
 
         .chatbot-toggle:active {

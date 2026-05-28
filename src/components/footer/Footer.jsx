@@ -3,110 +3,119 @@ import { BsLinkedin, BsGithub, BsInstagram } from "react-icons/bs";
 import { AiFillTwitterCircle } from "react-icons/ai";
 
 export const Footer = () => {
+  const navLinks = [
+    { href: "#header", label: "Home" },
+    { href: "#about", label: "About" },
+    { href: "#experience", label: "Experience" },
+    { href: "#service", label: "Services" },
+    { href: "#portfolio", label: "Portfolio" },
+    { href: "#contact", label: "Contact" },
+  ];
+
+  const socials = [
+    { href: "https://www.linkedin.com/in/sahspeaks/", icon: <BsLinkedin size={14} /> },
+    { href: "https://github.com/sahspeaks", icon: <BsGithub size={14} /> },
+    { href: "https://twitter.com/Sah_speaks", icon: <AiFillTwitterCircle size={14} /> },
+    { href: "https://www.instagram.com/sah_speaks/", icon: <BsInstagram size={14} /> },
+  ];
+
   return (
     <footer
       id="footer"
-      className="bg-[#90be6d] text-gray-900 mt-32 pt-12 text-center text-sm"
+      className="mt-32"
+      style={{
+        background: "var(--surface)",
+        borderTop: "1px solid var(--border-soft)",
+        padding: "48px 0 32px",
+      }}
     >
-      <a
-        href="#header"
-        className="text-2xl text-gray-600 font-semibold mb-8 inline-block hover:text-gray-700 transition-colors duration-300"
-      >
-        ABHISHEK
-      </a>
-
-      <ul className="flex flex-wrap justify-center gap-8 mb-16 sm:gap-6">
-        <li>
-          <a
-            href="#header"
-            className="text-gray-600 hover:text-gray-700 transition-colors duration-300"
-          >
-            Home
-          </a>
-        </li>
-        <li>
-          <a
-            href="#about"
-            className="text-gray-600 hover:text-gray-700 transition-colors duration-300"
-          >
-            About
-          </a>
-        </li>
-        <li>
-          <a
-            href="#experience"
-            className="hover:text-gray-700 transition-colors duration-300 text-gray-600"
-          >
-            Experience
-          </a>
-        </li>
-        <li>
-          <a
-            href="#service"
-            className="hover:text-gray-700 transition-colors duration-300 text-gray-600"
-          >
-            Services
-          </a>
-        </li>
-        <li>
-          <a
-            href="#portfolio"
-            className="hover:text-gray-700 transition-colors duration-300 text-gray-600"
-          >
-            Portfolio
-          </a>
-        </li>
-        <li>
-          <a
-            href="#contact"
-            className="hover:text-gray-700 transition-colors duration-300 text-gray-600"
-          >
-            Contact
-          </a>
-        </li>
-      </ul>
-
-      <div className="flex justify-center gap-4 mb-16">
+      <div className="container mx-auto text-center">
+        {/* Brand */}
         <a
-          href="https://www.linkedin.com/in/sahspeaks/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-gray-900 text-white p-3 rounded-lg hover:bg-gray-800 transition-all duration-300"
+          href="#header"
+          style={{
+            fontFamily: "var(--f-sans)",
+            fontSize: 20,
+            fontWeight: 700,
+            letterSpacing: "-0.02em",
+            display: "inline-block",
+            marginBottom: 24,
+          }}
         >
-          <BsLinkedin />
+          <span className="gradient-text">ABHISHEK</span>
         </a>
-        <a
-          href="https://github.com/sahspeaks"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-gray-900 text-white p-3 rounded-lg hover:bg-gray-800 transition-all duration-300"
-        >
-          <BsGithub />
-        </a>
-        <a
-          href="https://twitter.com/Sah_speaks"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-gray-900 text-white p-3 rounded-lg hover:bg-gray-800 transition-all duration-300"
-        >
-          <AiFillTwitterCircle />
-        </a>
-        <a
-          href="https://www.instagram.com/sah_speaks/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-gray-900 text-white p-3 rounded-lg hover:bg-gray-800 transition-all duration-300"
-        >
-          <BsInstagram />
-        </a>
-      </div>
 
-      <div className="w-full h-px bg-gray-700 mb-16"></div>
+        {/* Nav links */}
+        <div className="flex flex-wrap justify-center gap-1 mb-8">
+          {navLinks.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              className="btn-ghost"
+              style={{
+                padding: "6px 12px",
+                borderRadius: 8,
+                fontSize: 13,
+                fontWeight: 500,
+                color: "var(--text-dim)",
+                transition: "all .15s",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.color = "var(--text)";
+                e.currentTarget.style.background = "var(--surface-2)";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.color = "var(--text-dim)";
+                e.currentTarget.style.background = "transparent";
+              }}
+            >
+              {link.label}
+            </a>
+          ))}
+        </div>
 
-      <div className="pb-16">
-        <small className="text-gray-700">
-          &copy; ABHISHEK KUMAR. All rights reserved.
-        </small>
+        {/* Social icons */}
+        <div className="flex justify-center gap-2 mb-8">
+          {socials.map((s, i) => (
+            <a
+              key={i}
+              href={s.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                width: 36,
+                height: 36,
+                borderRadius: 8,
+                background: "var(--surface-2)",
+                border: "1px solid var(--border-soft)",
+                display: "grid",
+                placeItems: "center",
+                color: "var(--text-dim)",
+                transition: "all .15s",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.background = "var(--surface-3)";
+                e.currentTarget.style.color = "var(--accent)";
+                e.currentTarget.style.borderColor = "var(--border-strong)";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.background = "var(--surface-2)";
+                e.currentTarget.style.color = "var(--text-dim)";
+                e.currentTarget.style.borderColor = "var(--border-soft)";
+              }}
+            >
+              {s.icon}
+            </a>
+          ))}
+        </div>
+
+        {/* Divider */}
+        <div style={{ height: 1, background: "var(--border-soft)", marginBottom: 20 }} />
+
+        {/* Copyright */}
+        <p className="faint mono" style={{ fontSize: 11 }}>
+          &copy; {new Date().getFullYear()} ABHISHEK KUMAR. All rights reserved.
+        </p>
       </div>
     </footer>
   );

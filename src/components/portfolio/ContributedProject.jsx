@@ -2,8 +2,11 @@ import React from "react";
 
 const ContributedProject = ({ project }) => {
   return (
-    <article className="bg-gray-800 p-4 rounded-3xl border border-transparent transition-all duration-300 hover:border-green-300 hover:bg-transparent">
-      <div className="rounded-2xl overflow-hidden h-72 flex items-center justify-center bg-gray-700">
+    <article className="card card-pad card-lift" style={{ cursor: "default" }}>
+      <div
+        className="overflow-hidden flex items-center justify-center"
+        style={{ borderRadius: 10, height: 280, background: "var(--surface-2)" }}
+      >
         <img
           src={project.image}
           alt={project.title}
@@ -11,20 +14,23 @@ const ContributedProject = ({ project }) => {
         />
       </div>
 
-      <h3 className="mt-2 mb-4 text-lg font-medium">{project.title}</h3>
-
-      <div className="my-4 text-gray-400">
-        <p className="text-sm mb-1">{project.description}</p>
-        <small className="text-xs text-[#90be6d] block font-medium">
-          Contribution: {project.contribution}
-        </small>
+      <div className="mt-3 mb-3">
+        <h3 style={{ fontSize: 17, fontWeight: 600 }}>{project.title}</h3>
       </div>
 
-      <div className="flex gap-4 mb-2">
+      <div className="mb-3">
+        <p className="dim" style={{ fontSize: 13, marginBottom: 4 }}>{project.description}</p>
+        <span className="badge badge-accent" style={{ fontSize: 10.5 }}>
+          {project.contribution}
+        </span>
+      </div>
+
+      <div className="flex gap-2">
         {project.githubUrl && (
           <a
             href={project.githubUrl}
-            className="w-max inline-block text-[#90be6d] py-3 px-5 rounded-lg cursor-pointer border border-[#90be6d] transition-all duration-300 hover:bg-white hover:text-gray-900 hover:border-transparent"
+            className="btn"
+            style={{ fontSize: 12.5, padding: "5px 10px", borderRadius: 7 }}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -33,7 +39,8 @@ const ContributedProject = ({ project }) => {
         )}
         <a
           href={project.liveUrl}
-          className="w-max inline-block bg-[#90be6d] text-gray-900 py-3 px-5 rounded-lg cursor-pointer border border-green-400 transition-all duration-300 hover:bg-white hover:text-gray-900 hover:border-transparent"
+          className="btn btn-primary"
+          style={{ fontSize: 12.5, padding: "5px 10px", borderRadius: 7 }}
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -42,9 +49,9 @@ const ContributedProject = ({ project }) => {
       </div>
 
       {project.isProduction && (
-        <div className="flex items-center gap-2 mt-4 text-xs text-gray-400">
-          <i className="fas fa-circle-info text-[#90be6d]"></i>
-          Active production site - Real transactions enabled
+        <div className="flex items-center gap-2 mt-3 faint mono" style={{ fontSize: 11 }}>
+          <i className="fas fa-circle-info" style={{ color: "var(--accent)" }} />
+          Active production site
         </div>
       )}
     </article>

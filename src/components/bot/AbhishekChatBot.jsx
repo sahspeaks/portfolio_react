@@ -352,7 +352,6 @@ const AbhishekChatbot = ({ isOpen, onClose }) => {
           <div className="chatbot-header-info">
             <div className="chatbot-avatar">
               <img src={ME} alt="Abhishek Kumar" />
-              <Bot className="w-5 h-5 text-white" />
             </div>
             <div>
               <h3>Abhishek Kumar</h3>
@@ -554,64 +553,79 @@ const AbhishekChatbot = ({ isOpen, onClose }) => {
           position: fixed;
           bottom: 82px;
           right: 20px;
-          width: 480px;
-          height: 600px;
-          background: #141b10;
-          border-radius: 20px;
-          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+          width: 420px;
+          height: 620px;
+          background: var(--bg, #0a0b0f);
+          border-radius: 14px;
+          box-shadow: 0 20px 60px rgba(0,0,0,.55), 0 0 0 1px var(--border-soft, #1c1f29);
           display: flex;
           flex-direction: column;
           z-index: 1000;
           overflow: hidden;
-          border: 1px solid rgba(144, 190, 109, 0.3);
+          border: 1px solid var(--border-soft, #1c1f29);
+          font-family: 'Inter', system-ui, sans-serif;
         }
 
+        /* ── Header (surface-2, no gradient) ── */
         .chatbot-header {
-          background: linear-gradient(135deg, #90be6d, #141b10);
-          color: white;
-          padding: 16px;
+          background: var(--surface-2, #171a23);
+          color: var(--text, #ecedf2);
+          padding: 14px 16px;
           display: flex;
           justify-content: space-between;
           align-items: center;
-          border-bottom: 1px solid rgba(144, 190, 109, 0.3);
+          border-bottom: 1px solid var(--border-soft, #1c1f29);
         }
 
         .chatbot-header-info {
           display: flex;
           align-items: center;
-          gap: 12px;
+          gap: 10px;
         }
 
         .chatbot-avatar {
-          width: 40px;
-          height: 40px;
-          background: rgba(255, 255, 255, 0.2);
-          border-radius: 50%;
+          width: 36px;
+          height: 36px;
+          background: var(--accent-soft, rgba(255,107,61,.14));
+          border: 1px solid var(--accent-edge, rgba(255,107,61,.25));
+          border-radius: 10px;
           display: flex;
           align-items: center;
           justify-content: center;
+          overflow: hidden;
+        }
+
+        .chatbot-avatar img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 9px;
         }
 
         .chatbot-header h3 {
           margin: 0;
-          font-size: 16px;
+          font-family: 'Space Grotesk', sans-serif;
+          font-size: 14px;
           font-weight: 600;
+          letter-spacing: -0.02em;
+          color: var(--text, #ecedf2);
         }
 
         .status-container {
           display: flex;
           align-items: center;
-          gap: 8px;
+          gap: 6px;
         }
 
         .status-dot {
-          width: 8px;
-          height: 8px;
+          width: 6px;
+          height: 6px;
           border-radius: 50%;
         }
 
         .status-dot.connected {
-          background: #4ade80;
+          background: #22d3a8;
+          box-shadow: 0 0 6px rgba(34,211,168,.4);
         }
 
         .status-dot.disconnected {
@@ -619,201 +633,223 @@ const AbhishekChatbot = ({ isOpen, onClose }) => {
         }
 
         .status-text {
-          font-size: 12px;
-          opacity: 0.8;
+          font-size: 11px;
+          color: var(--text-dim, #9098a8);
+          font-family: 'JetBrains Mono', monospace;
+          text-transform: uppercase;
+          letter-spacing: .04em;
         }
 
         .header-actions {
           display: flex;
           align-items: center;
-          gap: 8px;
+          gap: 4px;
         }
 
         .social-links {
           display: flex;
-          gap: 4px;
+          gap: 2px;
         }
 
         .social-link {
-          padding: 8px;
-          border-radius: 50%;
-          color: rgba(255, 255, 255, 0.7);
-          transition: all 0.2s ease;
+          padding: 6px;
+          border-radius: 8px;
+          color: var(--text-dim, #9098a8);
+          transition: all .15s;
         }
 
         .social-link:hover {
-          background: rgba(255, 255, 255, 0.1);
-          color: white;
+          background: var(--surface-3, #1f232e);
+          color: var(--accent, #ff6b3d);
         }
 
         .settings-btn,
         .chatbot-close {
-          background: rgba(255, 255, 255, 0.1);
-          border: none;
-          border-radius: 50%;
-          width: 32px;
-          height: 32px;
+          background: var(--surface, #11131a);
+          border: 1px solid var(--border-soft, #1c1f29);
+          border-radius: 8px;
+          width: 30px;
+          height: 30px;
           display: flex;
           align-items: center;
           justify-content: center;
           cursor: pointer;
-          color: white;
-          transition: background 0.2s ease;
+          color: var(--text-dim, #9098a8);
+          transition: all .15s;
         }
 
         .settings-btn:hover,
         .chatbot-close:hover {
-          background: rgba(255, 255, 255, 0.2);
+          background: var(--surface-3, #1f232e);
+          color: var(--text, #ecedf2);
+          border-color: var(--border-strong, #353a48);
         }
 
+        /* ── Settings panel ── */
         .settings-panel {
-          background: #1a2414;
-          border-bottom: 1px solid rgba(144, 190, 109, 0.3);
-          padding: 16px;
+          background: var(--surface, #11131a);
+          border-bottom: 1px solid var(--border-soft, #1c1f29);
+          padding: 14px 16px;
         }
 
         .settings-header {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          margin-bottom: 12px;
+          margin-bottom: 10px;
         }
 
         .settings-header h3 {
-          color: white;
-          font-size: 14px;
-          font-weight: 600;
+          color: var(--text-dim, #9098a8);
+          font-family: 'JetBrains Mono', monospace;
+          font-size: 10px;
+          font-weight: 500;
+          text-transform: uppercase;
+          letter-spacing: .12em;
           margin: 0;
         }
 
         .settings-actions {
           display: flex;
-          gap: 8px;
+          gap: 6px;
         }
 
         .action-btn {
           display: flex;
           align-items: center;
           gap: 4px;
-          padding: 6px 12px;
-          border-radius: 20px;
-          font-size: 12px;
-          border: none;
+          padding: 5px 10px;
+          border-radius: 6px;
+          font-size: 11px;
+          font-family: 'Inter', sans-serif;
+          border: 1px solid var(--border-soft, #1c1f29);
           cursor: pointer;
-          transition: all 0.2s ease;
+          transition: all .15s;
         }
 
         .reset-btn {
-          background: rgba(255, 193, 7, 0.2);
-          color: #ffc107;
+          background: var(--surface-2, #171a23);
+          color: #ffb547;
+          border-color: rgba(255,181,71,.2);
         }
 
         .reset-btn:hover {
-          background: rgba(255, 193, 7, 0.3);
+          background: var(--surface-3, #1f232e);
+          border-color: rgba(255,181,71,.4);
         }
 
         .new-chat-btn {
-          background: rgba(144, 190, 109, 0.4);
-          color: #90be6d;
+          background: var(--surface-2, #171a23);
+          color: var(--accent, #ff6b3d);
+          border-color: var(--accent-edge, rgba(255,107,61,.25));
         }
 
         .new-chat-btn:hover {
-          background: rgba(144, 190, 109, 0.5);
+          background: var(--accent-soft, rgba(255,107,61,.14));
+          border-color: var(--accent, #ff6b3d);
         }
 
         .tone-options {
           display: flex;
           flex-wrap: wrap;
-          gap: 8px;
+          gap: 6px;
         }
 
         .tone-btn {
           display: flex;
           align-items: center;
-          gap: 6px;
-          padding: 8px 12px;
-          border-radius: 20px;
-          font-size: 12px;
-          border: 1px solid rgba(144, 190, 109, 0.4);
-          background: rgba(144, 190, 109, 0.1);
-          color: rgba(255, 255, 255, 0.8);
+          gap: 5px;
+          padding: 6px 10px;
+          border-radius: 8px;
+          font-size: 11px;
+          font-family: 'Inter', sans-serif;
+          border: 1px solid var(--border-soft, #1c1f29);
+          background: var(--surface-2, #171a23);
+          color: var(--text-dim, #9098a8);
           cursor: pointer;
-          transition: all 0.2s ease;
+          transition: all .15s;
         }
 
         .tone-btn:hover {
-          background: rgba(144, 190, 109, 0.2);
+          background: var(--surface-3, #1f232e);
+          border-color: var(--border-strong, #353a48);
+          color: var(--text, #ecedf2);
         }
 
         .tone-btn.active {
-          background: #90be6d;
-          color: #141b10;
-          border-color: #90be6d;
+          background: var(--accent-soft, rgba(255,107,61,.14));
+          color: var(--accent, #ff6b3d);
+          border-color: var(--accent-edge, rgba(255,107,61,.25));
         }
 
+        /* ── Quick messages ── */
         .quick-messages {
-          padding: 0px;
+          padding: 0;
           margin-bottom: 4px;
         }
 
         .quick-messages-scroll {
           display: flex;
-          gap: 8px;
+          gap: 6px;
           overflow-x: auto;
-          padding-bottom: 8px;
+          padding-bottom: 6px;
         }
 
         .quick-messages-scroll::-webkit-scrollbar {
-          height: 4px;
+          height: 3px;
         }
 
         .quick-messages-scroll::-webkit-scrollbar-track {
-          background: rgba(144, 190, 109, 0.1);
-          border-radius: 2px;
+          background: transparent;
         }
 
         .quick-messages-scroll::-webkit-scrollbar-thumb {
-          background: rgba(144, 190, 109, 0.3);
+          background: var(--border, #242833);
           border-radius: 2px;
         }
 
         .quick-message-btn {
           flex-shrink: 0;
-          padding: 8px 12px;
-          border-radius: 20px;
+          padding: 5px 10px;
+          border-radius: 6px;
           font-size: 10px;
-          border: 1px solid rgba(144, 190, 109, 0.4);
-          color: #90be6d;
+          font-family: 'Inter', sans-serif;
+          border: 1px solid var(--border-soft, #1c1f29);
+          background: var(--surface-2, #171a23);
+          color: var(--text-dim, #9098a8);
           cursor: pointer;
-          transition: all 0.2s ease;
+          transition: all .15s;
           white-space: nowrap;
         }
 
         .quick-message-btn:hover {
-          background: rgba(144, 190, 109, 0.2);
+          background: var(--surface-3, #1f232e);
+          border-color: var(--border-strong, #353a48);
+          color: var(--accent, #ff6b3d);
         }
 
+        /* ── Messages area ── */
         .chatbot-messages {
           flex: 1;
           overflow-y: auto;
-          padding: 16px;
+          padding: 14px;
           display: flex;
           flex-direction: column;
-          gap: 12px;
+          gap: 10px;
+          background: var(--bg, #0a0b0f);
         }
 
         .chatbot-messages::-webkit-scrollbar {
-          width: 6px;
+          width: 4px;
         }
 
         .chatbot-messages::-webkit-scrollbar-track {
-          background: rgba(144, 190, 109, 0.1);
-          border-radius: 3px;
+          background: transparent;
         }
 
         .chatbot-messages::-webkit-scrollbar-thumb {
-          background: rgba(144, 190, 109, 0.3);
-          border-radius: 3px;
+          background: var(--border, #242833);
+          border-radius: 2px;
         }
 
         .welcome-message {
@@ -822,21 +858,24 @@ const AbhishekChatbot = ({ isOpen, onClose }) => {
         }
 
         .welcome-icon {
-          width: 48px;
-          height: 48px;
-          color: rgba(255, 255, 255, 0.4);
-          margin: 0 auto 16px;
+          width: 40px;
+          height: 40px;
+          color: var(--text-faint, #5a606e);
+          margin: 0 auto 14px;
         }
 
         .welcome-message h2 {
-          color: white;
-          font-size: 20px;
+          font-family: 'Space Grotesk', sans-serif;
+          color: var(--text, #ecedf2);
+          font-size: 18px;
           font-weight: 600;
-          margin: 0 0 8px 0;
+          letter-spacing: -0.02em;
+          margin: 0 0 6px 0;
         }
 
         .welcome-message p {
-          color: rgba(255, 255, 255, 0.6);
+          color: var(--text-dim, #9098a8);
+          font-size: 13px;
           margin: 0;
         }
 
@@ -864,9 +903,9 @@ const AbhishekChatbot = ({ isOpen, onClose }) => {
         }
 
         .message-avatar {
-          width: 32px;
-          height: 32px;
-          border-radius: 50%;
+          width: 28px;
+          height: 28px;
+          border-radius: 8px;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -875,54 +914,62 @@ const AbhishekChatbot = ({ isOpen, onClose }) => {
         }
 
         .message.user .message-avatar {
-          background: #90be6d;
+          background: var(--accent-soft, rgba(255,107,61,.14));
+          border: 1px solid var(--accent-edge, rgba(255,107,61,.25));
+          color: var(--accent, #ff6b3d);
         }
 
         .message.assistant .message-avatar {
-          background: linear-gradient(135deg, #90be6d, #7aa356);
+          background: var(--surface-2, #171a23);
+          border: 1px solid var(--border-soft, #1c1f29);
+          color: var(--accent, #ff6b3d);
         }
 
         .message-bubble {
-          padding: 12px 16px;
-          border-radius: 18px;
+          padding: 10px 14px;
+          border-radius: 10px;
           position: relative;
         }
 
         .message.user .message-bubble {
-          background: #90be6d;
-          color: #141b10;
-          border-bottom-right-radius: 6px;
+          background: var(--accent-soft, rgba(255,107,61,.14));
+          border: 1px solid var(--accent-edge, rgba(255,107,61,.25));
+          color: var(--text, #ecedf2);
+          border-bottom-right-radius: 4px;
         }
 
         .message.assistant .message-bubble {
-          background: #1e2a17;
-          color: white;
-          border: 1px solid rgba(144, 190, 109, 0.3);
-          border-bottom-left-radius: 6px;
+          background: var(--surface, #11131a);
+          color: var(--text, #ecedf2);
+          border: 1px solid var(--border-soft, #1c1f29);
+          border-bottom-left-radius: 4px;
         }
 
         .message-bubble p {
           margin: 0 0 4px 0;
-          line-height: 1.4;
+          font-size: 13px;
+          line-height: 1.5;
           white-space: pre-wrap;
         }
 
         .message-time {
           font-size: 10px;
-          opacity: 0.7;
+          font-family: 'JetBrains Mono', monospace;
+          color: var(--text-faint, #5a606e);
         }
 
         .typing-indicator {
           display: flex;
           gap: 4px;
           align-items: center;
+          padding: 4px 0;
         }
 
         .typing-indicator span {
-          width: 6px;
-          height: 6px;
+          width: 5px;
+          height: 5px;
           border-radius: 50%;
-          background: #90be6d;
+          background: var(--accent, #ff6b3d);
           animation: typing 1.4s infinite;
         }
 
@@ -935,96 +982,96 @@ const AbhishekChatbot = ({ isOpen, onClose }) => {
         }
 
         @keyframes typing {
-          0%,
-          60%,
-          100% {
-            transform: translateY(0);
-          }
-          30% {
-            transform: translateY(-8px);
-          }
+          0%, 60%, 100% { transform: translateY(0); }
+          30% { transform: translateY(-6px); }
         }
 
+        /* ── Input area ── */
         .chatbot-input {
-          background: #1e2a17;
-          border-top: 1px solid rgba(144, 190, 109, 0.3);
-          padding: 16px;
+          background: var(--surface, #11131a);
+          border-top: 1px solid var(--border-soft, #1c1f29);
+          padding: 12px 14px;
         }
 
         .input-container {
           display: flex;
-          gap: 12px;
+          gap: 8px;
           align-items: flex-end;
         }
 
         .message-input {
           flex: 1;
-          background: #141b10;
-          border: 1px solid rgba(144, 190, 109, 0.4);
-          border-radius: 20px;
-          padding: 12px 16px;
-          color: white;
-          font-size: 14px;
+          background: var(--bg, #0a0b0f);
+          border: 1px solid var(--border-soft, #1c1f29);
+          border-radius: 10px;
+          padding: 10px 14px;
+          color: var(--text, #ecedf2);
+          font-size: 13px;
+          font-family: 'Inter', sans-serif;
           resize: none;
-          min-height: 44px;
+          min-height: 40px;
           max-height: 120px;
           outline: none;
-          transition: border-color 0.2s ease;
+          transition: border-color .15s;
         }
 
         .message-input:focus {
-          border-color: #90be6d;
+          border-color: var(--border-strong, #353a48);
+          box-shadow: 0 0 0 2px rgba(255,107,61,.08);
         }
 
         .message-input::placeholder {
-          color: rgba(255, 255, 255, 0.5);
+          color: var(--text-faint, #5a606e);
         }
 
         .send-btn {
-          width: 44px;
-          height: 44px;
-          border-radius: 50%;
-          background: linear-gradient(135deg, #90be6d, #7aa356);
+          width: 40px;
+          height: 40px;
+          border-radius: 10px;
+          background: linear-gradient(180deg, #ff7a4d 0%, #ff5a26 100%);
           border: none;
-          color: white;
+          color: #1a0a04;
           cursor: pointer;
           display: flex;
           align-items: center;
           justify-content: center;
-          transition: all 0.2s ease;
+          transition: all .15s;
           flex-shrink: 0;
+          box-shadow: 0 2px 8px rgba(255,107,61,.25);
         }
 
         .send-btn:hover:not(:disabled) {
-          transform: scale(1.05);
-          box-shadow: 0 4px 15px rgba(144, 190, 109, 0.4);
+          transform: translateY(-1px);
+          box-shadow: 0 4px 16px rgba(255,107,61,.35);
         }
 
         .send-btn:disabled {
-          opacity: 0.5;
+          opacity: 0.35;
           cursor: not-allowed;
+          box-shadow: none;
         }
 
         .input-status {
           text-align: center;
-          margin-top: 8px;
+          margin-top: 6px;
         }
 
         .input-status p {
-          font-size: 11px;
-          color: rgba(255, 255, 255, 0.6);
+          font-size: 10px;
+          font-family: 'JetBrains Mono', monospace;
+          color: var(--text-faint, #5a606e);
           margin: 0;
         }
 
-        /* Mobile Responsive */
+        /* ── Mobile ── */
         @media (max-width: 768px) {
           .chatbot-container {
-            bottom: 20px;
-            right: 20px;
-            left: 20px;
+            bottom: 16px;
+            right: 12px;
+            left: 12px;
             width: auto;
             height: 70vh;
-            max-height: 600px;
+            max-height: 620px;
           }
 
           .social-links {
@@ -1032,31 +1079,31 @@ const AbhishekChatbot = ({ isOpen, onClose }) => {
           }
 
           .quick-messages-scroll {
-            gap: 6px;
+            gap: 4px;
           }
 
           .quick-message-btn {
-            font-size: 11px;
-            padding: 6px 10px;
+            font-size: 10px;
+            padding: 4px 8px;
           }
         }
 
         @media (max-width: 480px) {
           .chatbot-container {
             height: 80vh;
-            border-radius: 15px;
+            border-radius: 12px;
           }
 
           .chatbot-header {
-            padding: 12px;
+            padding: 10px 12px;
           }
 
           .chatbot-messages {
-            padding: 12px;
+            padding: 10px;
           }
 
           .chatbot-input {
-            padding: 12px;
+            padding: 10px;
           }
 
           .message-content {
@@ -1064,12 +1111,12 @@ const AbhishekChatbot = ({ isOpen, onClose }) => {
           }
 
           .tone-options {
-            gap: 6px;
+            gap: 4px;
           }
 
           .tone-btn {
-            font-size: 11px;
-            padding: 6px 10px;
+            font-size: 10px;
+            padding: 5px 8px;
           }
         }
       `}</style>
