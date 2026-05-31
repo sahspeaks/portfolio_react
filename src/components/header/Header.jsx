@@ -7,7 +7,7 @@ import { HeaderSocial } from "./HeaderSocial";
 export const Header = () => {
   const stats = [
     { k: "Experience", v: "1+", sub: "Years in industry" },
-    { k: "Projects", v: "15+", sub: "Built & shipped" },
+    { k: "Projects", v: "20+", sub: "Built & shipped" },
     { k: "Stack", v: "Full", sub: "Frontend · Backend" },
     { k: "Location", v: "India", sub: "Open to remote" },
   ];
@@ -35,7 +35,7 @@ export const Header = () => {
       <div className="container mx-auto relative z-10">
         {/* Mobile Layout */}
         <div className="lg:hidden text-center fade-up">
-          <div className="sect-eyebrow mb-4">// Hello, I'm</div>
+          <div className="sect-eyebrow mb-4">{"// Hello, I'm"}</div>
           <h1
             className="text-4xl sm:text-5xl font-semibold mb-2"
             style={{ letterSpacing: "-0.035em" }}
@@ -110,7 +110,7 @@ export const Header = () => {
                 fontSize: 12.5,
               }}
             >
-              <span className="dim">Software Engineer at TCS</span>
+              <span className="dim">Software Developer at TCS</span>
               <span className="divider" style={{ height: 14 }} />
               <span style={{ color: "var(--text)" }}>
                 Open to opportunities
@@ -142,9 +142,9 @@ export const Header = () => {
                 margin: 0,
               }}
             >
-              Full-Stack Developer crafting responsive, high-performance web
-              applications with React, Node.js, Spring Boot, and modern cloud
-              technologies.
+              Software Developer at TCS building enterprise middleware integrations,
+              distributed microservices, and full-stack web applications with
+              Java, Spring Boot, and the MERN stack.
             </p>
 
             <div className="mt-1">
@@ -156,14 +156,13 @@ export const Header = () => {
               style={{ color: "var(--text-faint)", fontSize: 12.5 }}
             >
               <span className="flex items-center gap-1.5">
-                <span style={{ color: "var(--easy)" }}>●</span> React & Next.js
+                <span style={{ color: "var(--easy)" }}>●</span> Java & Spring Boot
               </span>
               <span className="flex items-center gap-1.5">
-                <span style={{ color: "var(--accent)" }}>●</span> Node.js &
-                Spring Boot
+                <span style={{ color: "var(--accent)" }}>●</span> Apache Camel & Kafka
               </span>
               <span className="flex items-center gap-1.5">
-                <span style={{ color: "var(--info)" }}>●</span> MongoDB & MySQL
+                <span style={{ color: "var(--info)" }}>●</span> MERN Stack
               </span>
             </div>
           </div>

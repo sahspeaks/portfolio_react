@@ -340,6 +340,7 @@ const AbhishekChatbot = ({ isOpen, onClose }) => {
     if (isOpen && isConnected && !conversationId) {
       startNewConversation();
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isOpen, isConnected]);
 
   if (!isOpen) return null;
@@ -362,7 +363,7 @@ const AbhishekChatbot = ({ isOpen, onClose }) => {
                   }`}
                 ></span>
                 <span className="status-text">
-                  {isConnected ? "Software Engineer at TCS" : "Connecting..."}
+                  {isConnected ? "Software Developer at TCS" : "Connecting..."}
                 </span>
               </div>
             </div>

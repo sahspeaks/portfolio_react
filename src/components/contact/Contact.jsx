@@ -6,7 +6,7 @@ export const Contact = () => {
     <section id="contact" className="mt-32 fade-up">
       <div className="container mx-auto w-3/4 lg:w-3/4 md:w-5/6 sm:w-11/12">
         <div className="flex items-center gap-3 mb-8">
-          <span className="sect-eyebrow">// Contact</span>
+          <span className="sect-eyebrow">{"// Contact"}</span>
           <h2 style={{ fontSize: 28, fontWeight: 600 }}>Get in touch</h2>
         </div>
 

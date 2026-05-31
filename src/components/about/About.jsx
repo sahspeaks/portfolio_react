@@ -8,27 +8,45 @@ export const About = () => {
     <section id="about" className="mt-32 px-4 fade-up">
       <div className="container mx-auto max-w-6xl">
         <div className="flex items-center gap-3 mb-6">
-          <span className="sect-eyebrow">// About</span>
+          <span className="sect-eyebrow">{"// About"}</span>
           <h2 style={{ fontSize: 28, fontWeight: 600 }}>Get to know me</h2>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-[35%_1fr] gap-8 lg:gap-[8%]">
-          {/* Profile image card */}
-          <div className="w-full max-w-sm mx-auto lg:max-w-none">
-            <div className="card card-lift overflow-hidden">
-              <div className="lg:hidden">
+          {/* Profile image — floating style */}
+          <div className="w-full max-w-sm mx-auto lg:max-w-none flex justify-center">
+            <div className="about-img-wrap">
+              {/* Glow behind image */}
+              <div
+                style={{
+                  position: "absolute",
+                  width: "80%",
+                  height: "60%",
+                  top: "10%",
+                  left: "10%",
+                  background: "radial-gradient(closest-side, rgba(255,107,61,.18), transparent)",
+                  filter: "blur(40px)",
+                  pointerEvents: "none",
+                  zIndex: 0,
+                }}
+              />
+              <div className="lg:hidden" style={{ position: "relative", zIndex: 1 }}>
+                {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
                 <img
                   src={ME2}
                   alt="Abhishek Kumar"
-                  className="block w-full h-full object-contain"
+                  className="about-hero-img"
                 />
+                <div className="about-img-fade" />
               </div>
-              <div className="hidden lg:block">
+              <div className="hidden lg:block" style={{ position: "relative", zIndex: 1 }}>
+                {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
                 <img
                   src={ME}
                   alt="Abhishek Kumar"
-                  className="block w-full h-full object-contain"
+                  className="about-hero-img"
                 />
+                <div className="about-img-fade" />
               </div>
             </div>
           </div>
@@ -79,21 +97,49 @@ export const About = () => {
                     Projects
                   </span>
                 </div>
-                <div className="mono" style={{ fontSize: 26, fontWeight: 600 }}>15+</div>
+                <div className="mono" style={{ fontSize: 26, fontWeight: 600 }}>20+</div>
                 <div className="dim" style={{ fontSize: 12, marginTop: 2 }}>Built & shipped</div>
               </div>
             </div>
 
             <p style={{ color: "var(--text-dim)", lineHeight: 1.7, fontSize: 14 }}>
-              Dedicated Full-Stack Web Developer with a strong academic
-              background in Computer Science. Skilled in building responsive web
-              applications using cutting-edge technologies like React JS,
-              Tailwind CSS, Javascript. I enjoy exploring new technologies. I am
-              a quick learner with a fun, outgoing personality.
+              Results-driven Software Developer at Tata Consultancy Services (TCS) with
+              hands-on experience designing and delivering enterprise-grade middleware
+              integration platforms, distributed microservices architectures, and
+              full-stack web applications. Proficient in Java, Spring Boot, Apache Camel,
+              and the MERN stack. Experienced in building secure RESTful APIs,
+              asynchronous event-driven systems using Apache Kafka, and Generative
+              AI-powered solutions.
             </p>
           </div>
         </div>
       </div>
+
+      <style>{`
+        .about-img-wrap {
+          position: relative;
+          width: 85%;
+          max-width: 300px;
+        }
+
+        .about-hero-img {
+          width: 100%;
+          display: block;
+          border-radius: 20px;
+          object-fit: cover;
+        }
+
+        .about-img-fade {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 40%;
+          background: linear-gradient(to top, var(--bg) 0%, transparent 100%);
+          border-radius: 0 0 20px 20px;
+          pointer-events: none;
+        }
+      `}</style>
     </section>
   );
 };

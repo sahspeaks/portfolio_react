@@ -1,21 +1,35 @@
 import React from "react";
 
 const frontendSkills = [
+  { name: "React", level: "Experienced", pct: 90, icon: "fa-brands fa-react", color: "#61dafb" },
+  { name: "JavaScript", level: "Experienced", pct: 90, icon: "fa-brands fa-js", color: "#f7df1e" },
   { name: "HTML", level: "Experienced", pct: 95, icon: "fa-brands fa-html5", color: "#e34f26" },
   { name: "CSS", level: "Experienced", pct: 92, icon: "fa-brands fa-css3-alt", color: "#2965f1" },
-  { name: "JavaScript", level: "Experienced", pct: 90, icon: "fa-brands fa-js", color: "#f7df1e" },
-  { name: "Bootstrap", level: "Experienced", pct: 85, icon: "fa-brands fa-bootstrap", color: "#7952b3" },
   { name: "Tailwind CSS", level: "Experienced", pct: 88, icon: "fa-solid fa-wind", color: "#38bdf8" },
-  { name: "React", level: "Experienced", pct: 90, icon: "fa-brands fa-react", color: "#61dafb" },
+  { name: "Bootstrap", level: "Experienced", pct: 85, icon: "fa-brands fa-bootstrap", color: "#7952b3" },
 ];
 
 const backendSkills = [
-  { name: "Spring Boot", level: "Experienced", pct: 88, icon: "fa-solid fa-leaf", color: "#6db33f" },
+  { name: "Java", level: "Experienced", pct: 92, icon: "fa-brands fa-java", color: "#f89820" },
+  { name: "Spring Boot", level: "Experienced", pct: 90, icon: "fa-solid fa-leaf", color: "#6db33f" },
+  { name: "Apache Camel", level: "Experienced", pct: 88, icon: "fa-solid fa-route", color: "#e8590c" },
+  { name: "Apache Kafka", level: "Experienced", pct: 85, icon: "fa-solid fa-bolt", color: "#231f20" },
+  { name: "Spring WebFlux", level: "Experienced", pct: 84, icon: "fa-solid fa-arrows-spin", color: "#6db33f" },
   { name: "Node JS", level: "Experienced", pct: 87, icon: "fa-brands fa-node-js", color: "#68a063" },
-  { name: "MongoDB", level: "Experienced", pct: 85, icon: "fa-solid fa-database", color: "#4db33d" },
-  { name: "MySQL", level: "Experienced", pct: 84, icon: "fa-solid fa-database", color: "#00758f" },
-  { name: "Python", level: "Intermediate", pct: 70, icon: "fa-brands fa-python", color: "#ffb547" },
   { name: "Express JS", level: "Experienced", pct: 86, icon: "fa-brands fa-node", color: "#68a063" },
+];
+
+const databaseSkills = [
+  { name: "MySQL", level: "Experienced", pct: 88, icon: "fa-solid fa-database", color: "#00758f" },
+  { name: "MongoDB", level: "Experienced", pct: 85, icon: "fa-solid fa-leaf", color: "#4db33d" },
+  { name: "PostgreSQL", level: "Experienced", pct: 84, icon: "fa-solid fa-database", color: "#336791" },
+];
+
+const devopsSkills = [
+  { name: "Docker", level: "Experienced", pct: 85, icon: "fa-brands fa-docker", color: "#2496ed" },
+  { name: "Kubernetes", level: "Intermediate", pct: 75, icon: "fa-solid fa-dharmachakra", color: "#326ce5" },
+  { name: "Maven", level: "Experienced", pct: 86, icon: "fa-solid fa-cubes", color: "#c71a36" },
+  { name: "Git", level: "Experienced", pct: 90, icon: "fa-brands fa-git-alt", color: "#f05032" },
 ];
 
 const SkillCard = ({ skill, index }) => {
@@ -76,7 +90,7 @@ export const Experience = () => {
     <section id="experience" className="mt-32 fade-up">
       <div className="container mx-auto w-3/4 lg:w-3/4 md:w-5/6 sm:w-11/12">
         <div className="flex items-center gap-3 mb-2">
-          <span className="sect-eyebrow">// Skills</span>
+          <span className="sect-eyebrow">{"// Skills"}</span>
           <h2 style={{ fontSize: 28, fontWeight: 600 }}>My Experience</h2>
         </div>
         <p className="dim mb-8" style={{ fontSize: 14, maxWidth: 500 }}>
@@ -105,7 +119,7 @@ export const Experience = () => {
             </div>
           </div>
 
-          {/* Backend */}
+          {/* Backend & Middleware */}
           <div className="skill-pane">
             <div className="skill-pane-header">
               <div className="flex items-center gap-2.5">
@@ -113,14 +127,56 @@ export const Experience = () => {
                   <i className="fas fa-server" style={{ color: "var(--info)", fontSize: 12 }} />
                 </div>
                 <div>
-                  <span className="pane-title">Backend</span>
-                  <span className="pane-subtitle">Server & Database</span>
+                  <span className="pane-title">Backend & Middleware</span>
+                  <span className="pane-subtitle">APIs & Integration</span>
                 </div>
               </div>
               <span className="pane-count">{backendSkills.length}</span>
             </div>
             <div className="skill-list">
               {backendSkills.map((skill, i) => (
+                <SkillCard key={skill.name} skill={skill} index={i} />
+              ))}
+            </div>
+          </div>
+
+          {/* Databases */}
+          <div className="skill-pane">
+            <div className="skill-pane-header">
+              <div className="flex items-center gap-2.5">
+                <div className="pane-icon" style={{ background: "rgba(34,211,168,.14)", borderColor: "rgba(34,211,168,.25)" }}>
+                  <i className="fas fa-database" style={{ color: "#22d3a8", fontSize: 12 }} />
+                </div>
+                <div>
+                  <span className="pane-title">Databases</span>
+                  <span className="pane-subtitle">SQL & NoSQL</span>
+                </div>
+              </div>
+              <span className="pane-count">{databaseSkills.length}</span>
+            </div>
+            <div className="skill-list">
+              {databaseSkills.map((skill, i) => (
+                <SkillCard key={skill.name} skill={skill} index={i} />
+              ))}
+            </div>
+          </div>
+
+          {/* DevOps & Tools */}
+          <div className="skill-pane">
+            <div className="skill-pane-header">
+              <div className="flex items-center gap-2.5">
+                <div className="pane-icon" style={{ background: "rgba(176,124,255,.14)", borderColor: "rgba(176,124,255,.25)" }}>
+                  <i className="fas fa-gears" style={{ color: "#b07cff", fontSize: 12 }} />
+                </div>
+                <div>
+                  <span className="pane-title">DevOps & Tools</span>
+                  <span className="pane-subtitle">CI/CD & Containers</span>
+                </div>
+              </div>
+              <span className="pane-count">{devopsSkills.length}</span>
+            </div>
+            <div className="skill-list">
+              {devopsSkills.map((skill, i) => (
                 <SkillCard key={skill.name} skill={skill} index={i} />
               ))}
             </div>

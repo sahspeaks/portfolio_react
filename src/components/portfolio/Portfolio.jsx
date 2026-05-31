@@ -35,7 +35,7 @@ export const Portfolio = () => {
       <div className="container mx-auto w-3/4 lg:w-3/4 md:w-5/6 sm:w-11/12">
         {/* Header */}
         <div className="flex items-center gap-3 mb-2">
-          <span className="sect-eyebrow">// Portfolio</span>
+          <span className="sect-eyebrow">{"// Portfolio"}</span>
           <h2 style={{ fontSize: 28, fontWeight: 600 }}>Recent work</h2>
         </div>
         <p className="dim mb-6" style={{ fontSize: 14 }}>
