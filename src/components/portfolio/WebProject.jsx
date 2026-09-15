@@ -13,15 +13,17 @@ const WebProject = ({ project, featured }) => {
         {/* Hover overlay */}
         <div className="web-overlay">
           <div className="web-overlay-actions">
-            <a
-              href={project.github}
-              className="web-overlay-btn"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-github" style={{ fontSize: 14 }} />
-              <span>Code</span>
-            </a>
+            {project.github && (
+              <a
+                href={project.github}
+                className="web-overlay-btn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-github" style={{ fontSize: 14 }} />
+                <span>Code</span>
+              </a>
+            )}
             {!project.disabled && project.liveDemo && (
               <a
                 href={project.liveDemo}
@@ -50,14 +52,16 @@ const WebProject = ({ project, featured }) => {
       <div className="project-info">
         <h3 className="project-title">{project.title}</h3>
         <div className="project-links">
-          <a
-            href={project.github}
-            className="project-link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fab fa-github" />
-          </a>
+          {project.github && (
+            <a
+              href={project.github}
+              className="project-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-github" />
+            </a>
+          )}
           {!project.disabled && project.liveDemo && (
             <a
               href={project.liveDemo}

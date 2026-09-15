@@ -6,7 +6,7 @@ import { HeaderSocial } from "./HeaderSocial";
 
 export const Header = () => {
   const stats = [
-    { k: "Experience", v: "1+", sub: "Years in industry" },
+    { k: "Experience", v: "1.8+", sub: "Years in industry" },
     { k: "Projects", v: "20+", sub: "Built & shipped" },
     { k: "Stack", v: "Full", sub: "Frontend · Backend" },
     { k: "Location", v: "India", sub: "Open to remote" },

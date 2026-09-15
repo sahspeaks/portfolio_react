@@ -1,6 +1,30 @@
 // projectData.js - Centralized project data
 export const webProjectsData = [
   {
+    id: "codearena",
+    title: "CodeArena",
+    image: require("../../assets/CodeArena.png"),
+    github: "",
+    liveDemo: "",
+    disabled: true,
+  },
+  {
+    id: "prepforge",
+    title: "PrepForge",
+    image: require("../../assets/Prepforge.png"),
+    github: "",
+    liveDemo: "https://app-prepforge.netlify.app/",
+    disabled: false,
+  },
+  {
+    id: "taablr",
+    title: "Taablr",
+    image: require("../../assets/Taablr.png"),
+    github: "",
+    liveDemo: "https://www.taablr.in/",
+    disabled: false,
+  },
+  {
     id: "PDF RAG",
     title: "PDF RAG AI",
     image: require("../../assets/AI_RAG.png"),

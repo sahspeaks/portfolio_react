@@ -74,7 +74,7 @@ export const About = () => {
                     Experience
                   </span>
                 </div>
-                <div className="mono" style={{ fontSize: 26, fontWeight: 600 }}>1+</div>
+                <div className="mono" style={{ fontSize: 26, fontWeight: 600 }}>1.8+</div>
                 <div className="dim" style={{ fontSize: 12, marginTop: 2 }}>Years in industry</div>
               </div>
 
